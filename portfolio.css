@@ -22,6 +22,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+  text-decoration: none;
 }
 
 .navbar {
@@ -71,6 +72,16 @@ body {
   color: #172b4d;
 }
 
+.home_socialbar {
+  display: flex;
+  padding-left: 0;
+  padding-bottom: 50px;
+}
+
+.home_socialbar li {
+  list-style: none;
+}
+
 .home_socialbar img {
-  padding: 0 20px 64px 20px;
+  padding: 0 20px 20px 20px;
 }
