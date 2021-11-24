@@ -87,21 +87,33 @@ body {
   padding: 0 20px 20px 20px;
 }
 
-/*** -----------------  WORKS ----------------- ***/
+/*** -----------------  COMMON ----------------- ***/
 
-.works {
+.works,
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.works_title {
+.common_title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  margin: 24px 0;
+  margin: 20px 0;
 }
+
+.button {
+  background-color: #36b37f;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+/*** -----------------  WORKS ----------------- ***/
 
 .separator {
   width: 48px;
@@ -128,6 +140,7 @@ body {
 .langagues {
   list-style: none;
   display: flex;
+  padding-left: 0;
 }
 
 .data_work_card {
@@ -146,10 +159,6 @@ body {
   padding: 16px 16px 16px 16px;
 }
 
-.data_work_card ul {
-  padding-left: 0;
-}
-
 .data_work_card li {
   background-color: #ebf0ee;
   padding: 8px 12px 8px 12px;
@@ -159,11 +168,66 @@ body {
   line-height: 16px;
 }
 
-.data_work_card a {
-  background-color: #36b37f;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  padding: 12px;
+/*** -----------------  ABOUT ----------------- ***/
+
+.about_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 0 12px 0 12px;
+  text-align: center;
+  color: #42526e;
+}
+
+.about_card {
+  background-color: #ebf0ee;
+  border-radius: 8px;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.about_list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 40px;
+}
+
+.about_card h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin-bottom: 24px;
+}
+
+.about_card_item {
+  background-color: white;
+  color: #36b37e;
+  padding: 8px 12px 8px 12px;
+  margin: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.about_card img {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.about_items {
   margin-top: 20px;
+}
+
+.about_card_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
 }
