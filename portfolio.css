@@ -6,7 +6,6 @@ body {
   font-family: 'Inter', sans-serif;
   width: 375px;
   margin: auto;
-  display: grid;
 }
 
 /*** -----------------  TOOLBAR ----------------- ***/
