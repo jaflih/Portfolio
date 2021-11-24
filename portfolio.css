@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+
+/*** -----------------  TOOLBAR ----------------- ***/
+
+.toolbar {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #28352f;
+  padding: 10px 12px 10px 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar img {
+  padding: 8px;
+}
