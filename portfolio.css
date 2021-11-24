@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  width: 375px;
+  margin: auto;
+}
+
+/*** -----------------  TOOLBAR ----------------- ***/
+
+.toolbar {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #28352f;
+  padding: 10px 12px 10px 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar img {
+  padding: 8px;
+}
+
+/*** -----------------  HOME ----------------- ***/
+.home {
+  background-image: url('images/header-illsutration-mobile@2x.png');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  padding: 35px 24px 0 24px;
+}
+
+.home_title_green {
+  color: #36b37f;
+}
+
+.home_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 58px 0;
+  padding: 0 24px 0 24px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.home_socialbar {
+  display: flex;
+  padding-left: 0;
+  padding-bottom: 50px;
+}
+
+.home_socialbar li {
+  list-style: none;
+}
+
+.home_socialbar img {
+  padding: 0 20px 20px 20px;
+}
