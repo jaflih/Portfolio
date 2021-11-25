@@ -4,7 +4,6 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  width: 375px;
   margin: auto;
 }
 
@@ -108,11 +107,27 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 4px;
+  border: 0;
   padding: 12px;
   margin-top: 20px;
+  transition: 250ms all;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.button:active {
+  background-color: #008552;
 }
 
 /*** -----------------  WORKS ----------------- ***/
+
+.work_card_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
 
 .separator {
   width: 48px;
@@ -128,7 +143,7 @@ body {
   flex-direction: column;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin: 0 20px 20px 20px;
 }
 
 .img_work_card {
@@ -143,10 +158,10 @@ body {
 }
 
 .data_work_card {
-  height: 222px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .data_work_card h4 {
@@ -192,6 +207,10 @@ body {
   list-style: none;
   padding-left: 0;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about_card h4 {
@@ -219,7 +238,7 @@ body {
 }
 
 .about_items {
-  margin-top: 20px;
+  margin: 20px 20px 20px 20px;
 }
 
 .about_card_list {
@@ -229,4 +248,5 @@ body {
   justify-content: center;
   list-style: none;
   padding-left: 0;
+  max-width: 310px;
 }
