@@ -41,8 +41,8 @@ body {
 
 /*** -----------------  HOME ----------------- ***/
 .home {
-  background-image: url('images/header-illsutration-mobile@2x.png');
-  background-position: center;
+  background-image: url('images/header-illsutration-mobile@1x.png');
+  background-position: center 25%;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -376,7 +376,7 @@ footer {
   }
 
   .home {
-    background-image: url('images/Header-llustration-desktop@2x.png');
+    background-image: url('images/header-ilustration-desktop@2x.png');
     background-position: inherit;
     padding-bottom: 200px;
   }
