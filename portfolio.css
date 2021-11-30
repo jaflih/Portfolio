@@ -269,7 +269,7 @@ body {
 /*** -----------------  FOOTER ----------------- ***/
 
 .contact {
-  background-image: url("./images/back.png");
+  background-image: url("images/illustration1-contact-form-mobile.png");
   background-repeat: no-repeat;
   background-position: right bottom 350px;
 }
@@ -460,5 +460,12 @@ footer {
 
   .contact_icon img {
     padding: 0 0 0 20px;
+  }
+
+  .contact {
+    background-image: url("images/illustration1-contact-form-desktop.png"), url("images/illustration2-contact-form-desktop.png"), url("images/illustration3-contact-form-desktop.png");
+    background-position: 0 75%, 25% 75%, 100% 60%;
+    background-size: 11%, 8%, 14%;
+    margin-top: 50px;
   }
 }
