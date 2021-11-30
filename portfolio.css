@@ -303,28 +303,38 @@ body {
 }
 
 .contact .home_socialbar {
-  align-self: center;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .contact_email {
-  align-self: center;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
   color: #42526e;
+  display: flex;
+  justify-content: center;
 }
 
 .contact_icon img {
   padding: 0 2px 20px 20px;
 }
 
+.contact_ind_block {
+  display: flex;
+  justify-content: center;
+}
+
 .contact_ind {
   margin: 250px 50px 5px 50px;
   width: 150px;
   height: 6px;
-  align-self: center;
+}
+
+footer {
+  flex-direction: column;
 }
 
 /*** -----------------  DESKTOP VERSION ----------------- ***/
@@ -392,5 +402,43 @@ body {
 
   .about_list {
     flex-direction: row;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact .common_title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
+    flex-basis: 40%;
+    margin-top: 100px;
+  }
+
+  .contact_form {
+    flex-basis: 44%;
+  }
+
+  .contact_ind,
+  .contact_email {
+    display: none;
+  }
+
+  .contact_block_1 {
+    display: flex;
+  }
+
+  .contact .home_socialbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #dfe1e6;
+    padding: 20px;
+  }
+
+  .contact_icon img {
+    padding: 0 0 0 20px;
   }
 }
