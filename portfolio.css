@@ -13,6 +13,7 @@ body {
   height: 48px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .logo {
@@ -46,7 +47,6 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -338,6 +338,7 @@ body {
 
   .toolbar {
     justify-content: center;
+    margin-bottom: 100px;
   }
 
   .navbar_desktop {
@@ -352,5 +353,22 @@ body {
 
   .navbar_desktop_menu li {
     padding: 20px 10px 20px 10px;
+  }
+
+  .home {
+    background-image: url('images/Header-llustration-desktop@2x.png');
+    background-position: inherit;
+    padding-bottom: 200px;
+  }
+
+  .home_text {
+    width: 70%;
+  }
+
+  .home_title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0.3700000047683716px;
   }
 }
