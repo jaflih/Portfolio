@@ -330,7 +330,6 @@ body {
 /*** -----------------  DESKTOP VERSION ----------------- ***/
 
 @media (min-width: 756px) {
-  /*** -----------------  TOOLBAR ----------------- ***/
   .logo,
   .navbar {
     display: none;
@@ -370,5 +369,14 @@ body {
     font-weight: 800;
     line-height: 60px;
     letter-spacing: 0.3700000047683716px;
+  }
+
+  .work_card_list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .works {
+    margin-bottom: 100px;
   }
 }
