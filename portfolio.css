@@ -34,6 +34,10 @@ body {
   padding: 8px;
 }
 
+.navbar_desktop {
+  display: none;
+}
+
 /*** -----------------  HOME ----------------- ***/
 .home {
   background-image: url('images/header-illsutration-mobile@2x.png');
@@ -321,4 +325,32 @@ body {
   width: 150px;
   height: 6px;
   align-self: center;
+}
+
+/*** -----------------  DESKTOP VERSION ----------------- ***/
+
+@media (min-width: 756px) {
+  /*** -----------------  TOOLBAR ----------------- ***/
+  .logo,
+  .navbar {
+    display: none;
+  }
+
+  .toolbar {
+    justify-content: center;
+  }
+
+  .navbar_desktop {
+    display: inherit;
+  }
+
+  .navbar_desktop_menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar_desktop_menu li {
+    padding: 20px 10px 20px 10px;
+  }
 }
