@@ -262,7 +262,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 24px;
-  
 }
 
 .contact_input {
@@ -270,7 +269,7 @@ body {
   margin: 12px;
   border-radius: 4px;
   border: #36b37f 1px solid;
-  ;
+  font-size: 15px;
 }
 
 .contact_textarea {
@@ -278,20 +277,41 @@ body {
   padding: 15px;
   border-radius: 4px;
   border: #36b37f 1px solid;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
 }
 
 .contact_button {
   padding: 12px;
-  margin: 12px;
+  margin: 12px 12px 40px 12px;
   background-color: #36b37f;
   color: white;
   border: none;
   border-radius: 4px;
   width: 105px;
+  align-self: center;
 }
 
 .contact_button:hover {
   background-color: white;
   color: #36b37f;
   border: 1px solid #36b37f;
+}
+
+.contact .home_socialbar {
+  align-self: center;
+  padding: 0;
+}
+
+.contact_email {
+  align-self: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: #42526e;
+}
+
+.contact_icon img {
+  padding: 0 2px 20px 20px;
 }
