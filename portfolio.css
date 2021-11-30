@@ -379,4 +379,18 @@ body {
   .works {
     margin-bottom: 100px;
   }
+
+  .about_text {
+    width: 70%;
+  }
+
+  .button {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+
+  .about_list {
+    flex-direction: row;
+  }
 }
