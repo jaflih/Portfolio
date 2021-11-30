@@ -252,6 +252,8 @@ body {
   max-width: 310px;
 }
 
+/*** -----------------  FOOTER ----------------- ***/
+
 .contact {
   background-image: url("./images/back.png");
   background-repeat: no-repeat;
@@ -270,21 +272,19 @@ body {
   padding: 24px;
 }
 
-.contact_input {
-  padding: 15px;
-  margin: 12px;
-  border-radius: 4px;
-  border: #36b37f 1px solid;
-  font-size: 15px;
-}
-
+.contact_input,
 .contact_textarea {
-  margin: 12px;
   padding: 15px;
+  margin: 12px;
   border-radius: 4px;
-  border: #36b37f 1px solid;
+  border: #d0d9d4 1px solid;
   font-size: 15px;
   font-family: 'Inter', sans-serif;
+}
+
+.contact_textarea:hover,
+.contact_input:hover {
+  border: #36b37f 1px solid;
 }
 
 .contact_button {
