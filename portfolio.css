@@ -252,6 +252,12 @@ body {
   max-width: 310px;
 }
 
+.contact {
+  background-image: url("./images/back.png");
+  background-repeat: no-repeat;
+  background-position: right bottom 350px;
+}
+
 .contact .common_title {
   margin-top: 100px;
   padding: 24px;
@@ -314,4 +320,11 @@ body {
 
 .contact_icon img {
   padding: 0 2px 20px 20px;
+}
+
+.contact_ind {
+  margin: 250px 50px 5px 50px;
+  width: 150px;
+  height: 6px;
+  align-self: center;
 }
