@@ -153,8 +153,8 @@ body {
 
 .langagues {
   list-style: none;
-  display: flex;
   padding-left: 0;
+  display: block;
 }
 
 .data_work_card {
@@ -180,6 +180,7 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+  float: left;
 }
 
 /*** -----------------  ABOUT ----------------- ***/
@@ -249,4 +250,76 @@ body {
   list-style: none;
   padding-left: 0;
   max-width: 310px;
+}
+
+/*** -----------------  FOOTER ----------------- ***/
+
+.contact {
+  background-image: url("./images/back.png");
+  background-repeat: no-repeat;
+  background-position: right bottom 350px;
+}
+
+.contact .common_title {
+  margin-top: 100px;
+  padding: 24px;
+  text-align: center;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.contact_input,
+.contact_textarea {
+  padding: 15px;
+  margin: 12px;
+  border-radius: 4px;
+  border: #d0d9d4 1px solid;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact_textarea:hover,
+.contact_input:hover {
+  border: #36b37f 1px solid;
+}
+
+.contact_button {
+  padding: 12px;
+  margin: 12px 12px 40px 12px;
+  background-color: #36b37f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 125px;
+  align-self: center;
+  font-size: 17px;
+}
+
+.contact .home_socialbar {
+  align-self: center;
+  padding: 0;
+}
+
+.contact_email {
+  align-self: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: #42526e;
+}
+
+.contact_icon img {
+  padding: 0 2px 20px 20px;
+}
+
+.contact_ind {
+  margin: 250px 50px 5px 50px;
+  width: 150px;
+  height: 6px;
+  align-self: center;
 }
