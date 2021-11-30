@@ -251,3 +251,47 @@ body {
   padding-left: 0;
   max-width: 310px;
 }
+
+.contact .common_title {
+  margin-top: 100px;
+  padding: 24px;
+  text-align: center;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  
+}
+
+.contact_input {
+  padding: 15px;
+  margin: 12px;
+  border-radius: 4px;
+  border: #36b37f 1px solid;
+  ;
+}
+
+.contact_textarea {
+  margin: 12px;
+  padding: 15px;
+  border-radius: 4px;
+  border: #36b37f 1px solid;
+}
+
+.contact_button {
+  padding: 12px;
+  margin: 12px;
+  background-color: #36b37f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 105px;
+}
+
+.contact_button:hover {
+  background-color: white;
+  color: #36b37f;
+  border: 1px solid #36b37f;
+}
