@@ -154,7 +154,7 @@ body {
 .langagues {
   list-style: none;
   padding-left: 0;
-  display: block;
+  display: flex;
 }
 
 .data_work_card {
@@ -180,7 +180,6 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  float: left;
 }
 
 /*** -----------------  ABOUT ----------------- ***/
