@@ -294,14 +294,9 @@ body {
   color: white;
   border: none;
   border-radius: 4px;
-  width: 105px;
+  width: 125px;
   align-self: center;
-}
-
-.contact_button:hover {
-  background-color: white;
-  color: #36b37f;
-  border: 1px solid #36b37f;
+  font-size: 17px;
 }
 
 .contact .home_socialbar {
