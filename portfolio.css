@@ -193,6 +193,7 @@ body {
   font-size: 20px;
   line-height: 32px;
   padding: 0 12px 0 12px;
+  margin-bottom: 10px;
   text-align: center;
   color: #42526e;
 }
@@ -253,6 +254,16 @@ body {
   list-style: none;
   padding-left: 0;
   max-width: 310px;
+}
+
+.about_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("images/illustration2-about-me-mobile.png"), url("images/illustration1-about-me-mobile.png");
+  background-position: left bottom, 100% -11%;
+  background-repeat: no-repeat, no-repeat;
 }
 
 /*** -----------------  FOOTER ----------------- ***/
@@ -339,7 +350,7 @@ footer {
 
 /*** -----------------  DESKTOP VERSION ----------------- ***/
 
-@media (min-width: 756px) {
+@media (min-width: 1025px) {
   .logo,
   .navbar {
     display: none;
@@ -391,7 +402,7 @@ footer {
   }
 
   .about_text {
-    width: 70%;
+    width: 50%;
   }
 
   .button {
@@ -402,6 +413,15 @@ footer {
 
   .about_list {
     flex-direction: row;
+  }
+
+  .about_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("images/illustration2-about-me-desktop.png"), url("images/illustration1-about-me-desktop.png");
+    background-repeat: no-repeat, no-repeat;
   }
 
   footer {
