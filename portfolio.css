@@ -86,19 +86,22 @@ body {
 }
 
 .home_socialbar img {
-  padding: 0 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  transition: 3s all ease-in;
+  border-color: #36b37e;
 }
 
-a {
+.navbar_desktop_menu a {
   text-decoration: none;
-  list-style: none;
-  transition: 1000ms;
+  transition: color 100ms, border-bottom 20ms;
+  color: black;
 }
 
-a:hover {
+.navbar_desktop_menu a:hover {
   color: #36b37e;
   text-decoration: none;
   border-bottom: 1px black solid;
+  transition: color 100ms, border-bottom 20ms;
 }
 
 /*** -----------------  COMMON ----------------- ***/
@@ -286,11 +289,6 @@ a:hover {
 .image {
   animation-name: bigger;
   animation-duration: 2s;
-}
-
-.image {
-  animation-name: bigger;
-  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
@@ -300,9 +298,10 @@ a:hover {
   }
 
   to {
-    transform: translateX(50px);
+    transform: translateX(10px);
   }
 }
+
 /*** -----------------  FOOTER ----------------- ***/
 
 .contact {
@@ -390,6 +389,11 @@ a:hover {
 
 footer {
   flex-direction: column;
+}
+
+.home_socialbar img:hover {
+  border: 1px black solid;
+  transition: ease-in all 3s;
 }
 
 /*** -----------------  DESKTOP VERSION ----------------- ***/
