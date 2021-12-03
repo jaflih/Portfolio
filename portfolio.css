@@ -116,6 +116,11 @@ a:hover {
   line-height: 52px;
   color: #172b4d;
   margin: 20px 0;
+  transition: 100ms;
+}
+
+.common_title:hover {
+  color: #36b37f;
 }
 
 .button {
