@@ -288,9 +288,19 @@ a:hover {
   animation-duration: 2s;
 }
 
+.image {
+  animation-name: bigger;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 @keyframes bigger {
-  From: {
-    transform: translate
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(50px);
   }
 }
 /*** -----------------  FOOTER ----------------- ***/
