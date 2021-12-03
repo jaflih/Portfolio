@@ -283,6 +283,16 @@ a:hover {
   background-repeat: no-repeat, no-repeat;
 }
 
+.image {
+  animation-name: bigger;
+  animation-duration: 2s;
+}
+
+@keyframes bigger {
+  From: {
+    transform: translate
+  }
+}
 /*** -----------------  FOOTER ----------------- ***/
 
 .contact {
