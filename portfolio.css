@@ -86,7 +86,22 @@ body {
 }
 
 .home_socialbar img {
-  padding: 0 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  transition: 3s all ease-in;
+  border-color: #36b37e;
+}
+
+.navbar_desktop_menu a {
+  text-decoration: none;
+  transition: color 100ms, border-bottom 20ms;
+  color: black;
+}
+
+.navbar_desktop_menu a:hover {
+  color: #36b37e;
+  text-decoration: none;
+  border-bottom: 1px black solid;
+  transition: color 100ms, border-bottom 20ms;
 }
 
 /*** -----------------  COMMON ----------------- ***/
@@ -104,6 +119,11 @@ body {
   line-height: 52px;
   color: #172b4d;
   margin: 20px 0;
+  transition: 100ms;
+}
+
+.common_title:hover {
+  color: #36b37f;
 }
 
 .button {
@@ -266,6 +286,22 @@ body {
   background-repeat: no-repeat, no-repeat;
 }
 
+.image {
+  animation-name: bigger;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bigger {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(10px);
+  }
+}
+
 /*** -----------------  FOOTER ----------------- ***/
 
 .contact {
@@ -353,6 +389,11 @@ body {
 
 footer {
   flex-direction: column;
+}
+
+.home_socialbar img:hover {
+  border: 1px black solid;
+  transition: ease-in all 3s;
 }
 
 /*** -----------------  DESKTOP VERSION ----------------- ***/
