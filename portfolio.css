@@ -89,6 +89,18 @@ body {
   padding: 0 20px 20px 20px;
 }
 
+a {
+  text-decoration: none;
+  list-style: none;
+  transition: 1000ms;
+}
+
+a:hover {
+  color: #36b37e;
+  text-decoration: none;
+  border-bottom: 1px black solid;
+}
+
 /*** -----------------  COMMON ----------------- ***/
 
 .works,
