@@ -16,7 +16,6 @@
 
 [Live Demo Link](https://jihaneh.github.io/Portfolio/)
 
-
 ## Getting Started
 
 Download the project, unzip it and open index.html file in the browser
