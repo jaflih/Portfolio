@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: auto;
 }
 
@@ -41,7 +41,7 @@ body {
 
 /*** -----------------  HOME ----------------- ***/
 .home {
-  background-image: url('images/header-illsutration-mobile@1x.png');
+  background-image: url("images/header-illsutration-mobile@1x.png");
   background-position: center 25%;
   background-size: cover;
   height: 100vh;
@@ -281,7 +281,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url("images/illustration2-about-me-mobile.png"), url("images/illustration1-about-me-mobile.png");
+  background-image: url("images/illustration2-about-me-mobile.png"),
+    url("images/illustration1-about-me-mobile.png");
   background-position: left bottom, 100% -11%;
   background-repeat: no-repeat, no-repeat;
 }
@@ -310,6 +311,13 @@ body {
   background-position: right bottom 350px;
 }
 
+.contact_me_text {
+  color: #172b4d;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
 .contact .common_title {
   margin-top: 100px;
   padding: 24px;
@@ -328,7 +336,7 @@ body {
   margin: 12px;
   border-radius: 4px;
   font-size: 15px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .contact_input {
@@ -424,7 +432,7 @@ footer {
   }
 
   .home {
-    background-image: url('images/header-ilustration-desktop@2x.png');
+    background-image: url("images/header-ilustration-desktop@2x.png");
     background-position: inherit;
     padding-bottom: 200px;
   }
@@ -468,7 +476,8 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url("images/illustration2-about-me-desktop.png"), url("images/illustration1-about-me-desktop.png");
+    background-image: url("images/illustration2-about-me-desktop.png"),
+      url("images/illustration1-about-me-desktop.png");
     background-repeat: no-repeat, no-repeat;
   }
 
@@ -487,6 +496,7 @@ footer {
 
   .contact_form {
     flex-basis: 44%;
+    padding-top: 0;
   }
 
   .contact_ind,
@@ -496,6 +506,25 @@ footer {
 
   .contact_block_1 {
     display: flex;
+    margin-left: 135px;
+    margin-right: 86px;
+    align-items: flex-start;
+  }
+
+  .contact_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact_title {
+    color: #172b4d;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 24px;
+    padding-top: 5px;
   }
 
   .contact .home_socialbar {
@@ -511,7 +540,9 @@ footer {
   }
 
   .contact {
-    background-image: url("images/illustration1-contact-form-desktop.png"), url("images/illustration2-contact-form-desktop.png"), url("images/illustration3-contact-form-desktop.png");
+    background-image: url("images/illustration1-contact-form-desktop.png"),
+      url("images/illustration2-contact-form-desktop.png"),
+      url("images/illustration3-contact-form-desktop.png");
     background-position: 0 75%, 25% 75%, 100% 60%;
     background-size: 11%, 8%, 14%;
     margin-top: 50px;

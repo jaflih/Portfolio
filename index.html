@@ -1,274 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="portfolio.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jihane's Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8RP2GM07B"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B8RP2GM07B"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-B8RP2GM07B');
+      gtag("config", "G-B8RP2GM07B");
     </script>
-
-</head>
-<body>
-  
-
+  </head>
+  <body>
     <!-- HOME -->
     <section class="home">
-        <!-- TOOLBAR -->
-        <header class="toolbar">
-            <a href="#" class="logo"> Welcome </a>
-            <nav class="navbar"> <img src="images/icons/menu.png" alt="menu"> </nav>
-            <nav class="navbar_desktop">
-                <ul class="navbar_desktop_menu">
-                    <li><a class="nav_link" href="#">Portfolio</a></li>
-                    <li><a class="nav_link" href="#">About</a></li>
-                    <li><a class="nav_link" href="#">Contact</a></li>
-                </ul>
-            </nav> 
-        </header>
-        <!-- END TOOLBAR -->
-        <h1 class="home_title">
-            <span>Hey there. I’m Jihane</span>
-            <span class="home_title_green">I’m a software developer </span>
-        </h1>
-        <p class="home_text"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-            don’t hestiate to contact me.</p>
-        <ul class="home_socialbar">
-            <li>
-                <a href="#">
-                    <img src="images/icons/twitter.png" alt="twitter link">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="images/icons/linkedin.png" alt="linkedin link">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="images/icons/medium.png" alt="medium link">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="images/icons/github.png" alt="github link">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="images/icons/angellist.png" alt="angellist link">
-                </a>
-            </li>
-            
-        </ul>    
-
+      <!-- TOOLBAR -->
+      <header class="toolbar">
+        <a href="#" class="logo"> Welcome </a>
+        <nav class="navbar">
+          <img src="images/icons/menu.png" alt="top navigation menu" />
+        </nav>
+        <nav class="navbar_desktop">
+          <ul class="navbar_desktop_menu">
+            <li><a class="nav_link" href="#">Portfolio</a></li>
+            <li><a class="nav_link" href="#">About</a></li>
+            <li><a class="nav_link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- END TOOLBAR -->
+      <h1 class="home_title">
+        <span>Hey there. I’m Jihane</span>
+        <span class="home_title_green">I’m a software developer </span>
+      </h1>
+      <p class="home_text">
+        I can help you build a product , feature or website Look through some of
+        my work and experience! If you like what you see and have a project you
+        need coded, don’t hestiate to contact me.
+      </p>
+      <ul class="home_socialbar">
+        <li>
+          <a href="#">
+            <img src="images/icons/twitter.png" alt="twitter link" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/icons/linkedin.png" alt="linkedin link" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/icons/medium.png" alt="medium link" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/icons/github.png" alt="github link" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/icons/angellist.png" alt="angellist link" />
+          </a>
+        </li>
+      </ul>
     </section>
     <!-- END HOME -->
 
     <!-- RECENT WORKS -->
     <section class="works">
-        <h2 class="common_title">My Recent Works</h2>
-        <hr class="separator"/>
-        <div class="work_card_list">
-
-                <div class="work_card">
-                    <div class="img_work_card"></div>
-                    <div class="data_work_card">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
-                        <ul class="langagues">
-                            <li class="langague_item">Ruby on Rails</li>
-                            <li class="langague_item">css</li>
-                            <li class="langague_item">JavaScript</li>
-                            <li class="langague_item">html</li>
-                        </ul>
-                        <button class="button" type="submit">See Project</button>
-                    </div>
-                </div>
-        
-                <div class="work_card">
-                    <div class="img_work_card"></div>
-                    <div class="data_work_card">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
-                        <ul class="langagues">
-                            <li class="langague_item">Ruby on Rails</li>
-                            <li class="langague_item">css</li>
-                            <li class="langague_item">JavaScript</li>
-                            <li class="langague_item">html</li>
-                        </ul>
-                        <button class="button"  type="submit">See Project</button>
-                    </div>
-                </div>
-        
-                <div class="work_card">
-                    <div class="img_work_card"></div>
-                    <div class="data_work_card">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
-                        <ul class="langagues">
-                            <li class="langague_item">Ruby on Rails</li>
-                            <li class="langague_item">css</li>
-                            <li class="langague_item">JavaScript</li>
-                            <li class="langague_item">html</li>
-                        </ul>
-                        <button class="button" type="submit">See Project</button>
-                    </div>
-                </div>
-        
-                <div class="work_card">
-                    <div class="img_work_card"></div>
-                    <div class="data_work_card">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
-                        <ul class="langagues">
-                            <li class="langague_item">Ruby on Rails</li>
-                            <li class="langague_item">css</li>
-                            <li class="langague_item">JavaScript</li>
-                            <li class="langague_item">html</li>
-                        </ul>
-                        <button class="button" type="submit">See Project</button>
-                    </div>
-                </div>
-        
-                <div class="work_card">
-                    <div class="img_work_card"></div>
-                    <div class="data_work_card">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
-                        <ul class="langagues">
-                            <li class="langague_item">Ruby on Rails</li>
-                            <li class="langague_item">css</li>
-                            <li class="langague_item">JavaScript</li>
-                            <li class="langague_item">html</li>
-                        </ul>
-                        <button class="button" type="submit">See Project</button>
-                    </div>
-                </div>
-        
-                <div class="work_card">
-                    <div class="img_work_card"></div>
-                    <div class="data_work_card">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
-                        <ul class="langagues">
-                            <li class="langague_item">Ruby on Rails</li>
-                            <li class="langague_item">css</li>
-                            <li class="langague_item">JavaScript</li>
-                            <li class="langague_item">html</li>
-                        </ul>
-                        <button class="button" type="submit">See Project</button>
-                    </div>
-                </div>
-            
+      <h2 class="common_title">My Recent Works</h2>
+      <hr class="separator" />
+      <div class="work_card_list">
+        <div class="work_card">
+          <div class="img_work_card"></div>
+          <div class="data_work_card">
+            <h3>Multi-Post Stories Gain+Glory</h3>
+            <ul class="langagues">
+              <li class="langague_item">Ruby on Rails</li>
+              <li class="langague_item">css</li>
+              <li class="langague_item">JavaScript</li>
+              <li class="langague_item">html</li>
+            </ul>
+            <button class="button" type="submit">See Project</button>
+          </div>
         </div>
+
+        <div class="work_card">
+          <div class="img_work_card"></div>
+          <div class="data_work_card">
+            <h3>Multi-Post Stories Gain+Glory</h3>
+            <ul class="langagues">
+              <li class="langague_item">Ruby on Rails</li>
+              <li class="langague_item">css</li>
+              <li class="langague_item">JavaScript</li>
+              <li class="langague_item">html</li>
+            </ul>
+            <button class="button" type="submit">See Project</button>
+          </div>
+        </div>
+
+        <div class="work_card">
+          <div class="img_work_card"></div>
+          <div class="data_work_card">
+            <h3>Multi-Post Stories Gain+Glory</h3>
+            <ul class="langagues">
+              <li class="langague_item">Ruby on Rails</li>
+              <li class="langague_item">css</li>
+              <li class="langague_item">JavaScript</li>
+              <li class="langague_item">html</li>
+            </ul>
+            <button class="button" type="submit">See Project</button>
+          </div>
+        </div>
+
+        <div class="work_card">
+          <div class="img_work_card"></div>
+          <div class="data_work_card">
+            <h3>Multi-Post Stories Gain+Glory</h3>
+            <ul class="langagues">
+              <li class="langague_item">Ruby on Rails</li>
+              <li class="langague_item">css</li>
+              <li class="langague_item">JavaScript</li>
+              <li class="langague_item">html</li>
+            </ul>
+            <button class="button" type="submit">See Project</button>
+          </div>
+        </div>
+
+        <div class="work_card">
+          <div class="img_work_card"></div>
+          <div class="data_work_card">
+            <h3>Multi-Post Stories Gain+Glory</h3>
+            <ul class="langagues">
+              <li class="langague_item">Ruby on Rails</li>
+              <li class="langague_item">css</li>
+              <li class="langague_item">JavaScript</li>
+              <li class="langague_item">html</li>
+            </ul>
+            <button class="button" type="submit">See Project</button>
+          </div>
+        </div>
+
+        <div class="work_card">
+          <div class="img_work_card"></div>
+          <div class="data_work_card">
+            <h3>Multi-Post Stories Gain+Glory</h3>
+            <ul class="langagues">
+              <li class="langague_item">Ruby on Rails</li>
+              <li class="langague_item">css</li>
+              <li class="langague_item">JavaScript</li>
+              <li class="langague_item">html</li>
+            </ul>
+            <button class="button" type="submit">See Project</button>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- END RECENT WORKS -->
 
     <!-- ABOUT -->
     <section class="about">
-        <div class="about_block">
-            <h2 class="common_title">About me</h2>
-            <p class="about_text"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                don’t hestiate to contact me.</p>
-            <button class="button" type="submit">Get My Resume</button>
-        </div>
-       
-        <ul class="about_list">
-            <li class="about_items">
-                <div class="about_card">
-                        <img class="image" src="images/icons/terre.png" alt="langagues section">
-                        <h4>Langagues</h4>
-                        <ul class="about_card_list">
-                            <li class="about_card_item">JavaScript</li>
-                            <li class="about_card_item">Ruby</li>
-                            <li class="about_card_item">Html</li>
-                            <li class="about_card_item">CSS</li>
-                        </ul>
-                </div>
-            </li>
-            <li class="about_items">
-                <div class="about_card">
-                        <img class="image" src="images/icons/cubes.png" alt="langagues section">
-                        <h4>Frameworks</h4>
-                        <ul class="about_card_list">
-                            <li class="about_card_item">Bootstrap</li>
-                            <li class="about_card_item">Ruby on Rails</li>
-                            <li class="about_card_item">RSpec</li>
-                            <li class="about_card_item">Capybara</li>
-                            <li class="about_card_item">Selenium</li>
-                        </ul>
-                </div>
-            </li>
-            <li class="about_items">
-                <div class="about_card">
-                        <img class="image" src="images/icons/eclaire.png" alt="langagues section">
-                        <h4>Skills</h4>
-                        <ul class="about_card_list">
-                            <li class="about_card_item">Codekit</li>
-                            <li class="about_card_item">Github</li>
-                            <li class="about_card_item">Codepen</li>
-                            <li class="about_card_item">Gitlab</li>
-                            <li class="about_card_item">Terminal</li>
-                        </ul>
-                </div>
-            </li>
-        </ul>
+      <div class="about_block">
+        <h2 class="common_title">About me</h2>
+        <p class="about_text">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+        <button class="button" type="submit">Get My Resume</button>
+      </div>
 
-    </section> 
+      <ul class="about_list">
+        <li class="about_items">
+          <div class="about_card">
+            <img
+              class="image"
+              src="images/icons/terre.png"
+              alt="langagues section icon"
+            />
+            <h3>Langagues</h3>
+            <ul class="about_card_list">
+              <li class="about_card_item">JavaScript</li>
+              <li class="about_card_item">Ruby</li>
+              <li class="about_card_item">Html</li>
+              <li class="about_card_item">CSS</li>
+            </ul>
+          </div>
+        </li>
+        <li class="about_items">
+          <div class="about_card">
+            <img
+              class="image"
+              src="images/icons/cubes.png"
+              alt="Frameworks section icon"
+            />
+            <h3>Frameworks</h3>
+            <ul class="about_card_list">
+              <li class="about_card_item">Bootstrap</li>
+              <li class="about_card_item">Ruby on Rails</li>
+              <li class="about_card_item">RSpec</li>
+              <li class="about_card_item">Capybara</li>
+              <li class="about_card_item">Selenium</li>
+            </ul>
+          </div>
+        </li>
+        <li class="about_items">
+          <div class="about_card">
+            <img
+              class="image"
+              src="images/icons/eclaire.png"
+              alt="skills section icon"
+            />
+            <h3>Skills</h3>
+            <ul class="about_card_list">
+              <li class="about_card_item">Codekit</li>
+              <li class="about_card_item">Github</li>
+              <li class="about_card_item">Codepen</li>
+              <li class="about_card_item">Gitlab</li>
+              <li class="about_card_item">Terminal</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
     <!-- END ABOUT -->
-   
+
     <!-- FOOTER -->
     <footer class="contact">
-        <div class="contact_block_1">
-            <h2 class="common_title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-            <form class="contact_form" action="https://formspree.io/f/moqraknq" method="POST">
-                <input type="text"  name="name" class="contact_input" required placeholder="Full name" maxlength="30">
-                <input type="email" name="_replyto" class="contact_input" required placeholder="Email address" >
-                <textarea name="message" class="contact_textarea"  cols="30" rows="10" required  placeholder="Enter text here" maxlength="500"></textarea>
-                <input type="submit" class="contact_button button" value="Get It Touch">
-            </form>
+      <div class="contact_block_1">
+        <div class="contact_header">
+          <h2 class="contact_title">Contact Me</h2>
+          <p class="contact_me_text">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </p>
         </div>
+        <form
+          class="contact_form"
+          action="https://formspree.io/f/moqraknq"
+          method="POST"
+        >
+          <input
+            type="text"
+            name="name"
+            class="contact_input"
+            required
+            placeholder="Full name"
+            maxlength="30"
+          />
+          <input
+            type="email"
+            name="_replyto"
+            class="contact_input"
+            required
+            placeholder="Email address"
+          />
+          <textarea
+            name="message"
+            class="contact_textarea"
+            cols="30"
+            rows="10"
+            required
+            placeholder="Enter text here"
+            maxlength="500"
+          ></textarea>
+          <input
+            type="submit"
+            class="contact_button button"
+            value="Get It Touch"
+          />
+        </form>
+      </div>
 
-        <ul class="home_socialbar">
-            <li class="contact_icon">
-                <a href="#">
-                    <img src="images/icons/twitter.png" alt="twitter link">
-                </a>
-            </li>
-            <li class="contact_icon">
-                <a href="#">
-                    <img src="images/icons/linkedin.png" alt="linkedin link">
-                </a>
-            </li>
-            <li class="contact_icon">
-                <a href="#">
-                    <img src="images/icons/medium.png" alt="medium link">
-                </a>
-            </li>
-            <li class="contact_icon">
-                <a href="#">
-                    <img src="images/icons/github.png" alt="github link">
-                </a>
-            </li>
-            <li class="contact_icon">
-                <a href="#">
-                    <img src="images/icons/angellist.png" alt="angellist link">
-                </a>
-            </li>
-                
-        </ul>   
-        <p class="contact_email">jihane@email.com</p>
-        <div class="contact_ind_block"><img class="contact_ind" src="./images/icons/home-indicator.png" alt="home-indicator"></div>
+      <ul class="home_socialbar">
+        <li class="contact_icon">
+          <a href="#">
+            <img src="images/icons/twitter.png" alt="twitter link" />
+          </a>
+        </li>
+        <li class="contact_icon">
+          <a href="#">
+            <img src="images/icons/linkedin.png" alt="linkedin link" />
+          </a>
+        </li>
+        <li class="contact_icon">
+          <a href="#">
+            <img src="images/icons/medium.png" alt="medium link" />
+          </a>
+        </li>
+        <li class="contact_icon">
+          <a href="#">
+            <img src="images/icons/github.png" alt="github link" />
+          </a>
+        </li>
+        <li class="contact_icon">
+          <a href="#">
+            <img src="images/icons/angellist.png" alt="angellist link" />
+          </a>
+        </li>
+      </ul>
+      <p class="contact_email">jihane@email.com</p>
+      <div class="contact_ind_block">
+        <img
+          class="contact_ind"
+          src="./images/icons/home-indicator.png"
+          alt="hotizontal black line indicating bottom of the page"
+        />
+      </div>
     </footer>
     <!-- END FOOTER -->
-
-
-</body>
+  </body>
 </html>
