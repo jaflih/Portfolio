@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: auto;
 }
 
@@ -41,10 +41,10 @@ body {
 
 /*** -----------------  HOME ----------------- ***/
 .home {
-  background-image: url('images/header-illsutration-mobile@1x.png');
+  background-image: url("images/header-illsutration-mobile@1x.png");
   background-position: center 25%;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +62,7 @@ body {
 }
 
 .home_title_green {
-  color: #36b37f;
+  color: #18634b;
 }
 
 .home_text {
@@ -88,7 +88,7 @@ body {
 .home_socialbar img {
   padding: 20px 20px 20px 20px;
   transition: 3s all ease-in;
-  border-color: #36b37e;
+  border-color: #18634b;
 }
 
 .navbar_desktop_menu a {
@@ -98,7 +98,7 @@ body {
 }
 
 .navbar_desktop_menu a:hover {
-  color: #36b37e;
+  color: #18634b;
   text-decoration: none;
   border-bottom: 1px black solid;
   transition: color 100ms, border-bottom 20ms;
@@ -123,11 +123,11 @@ body {
 }
 
 .common_title:hover {
-  color: #36b37f;
+  color: #18634b;
 }
 
 .button {
-  background-color: #36b37f;
+  background-color: #18634b;
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -158,7 +158,7 @@ body {
   height: 4px;
   border-radius: 24px;
   border: none;
-  background: #36b37e;
+  background: #18634b;
   margin-bottom: 60px;
 }
 
@@ -179,6 +179,7 @@ body {
   list-style: none;
   padding-left: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .data_work_card {
@@ -219,9 +220,6 @@ body {
 }
 
 .about_card {
-  background-color: #ebf0ee;
-  border-radius: 8px;
-  height: 352px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,7 +247,7 @@ body {
 
 .about_card_item {
   background-color: white;
-  color: #36b37e;
+  color: #18634b;
   padding: 8px 12px 8px 12px;
   margin: 8px;
   font-weight: 600;
@@ -264,6 +262,8 @@ body {
 
 .about_items {
   margin: 20px 20px 20px 20px;
+  background-color: #ebf0ee;
+  border-radius: 8px;
 }
 
 .about_card_list {
@@ -310,6 +310,13 @@ body {
   background-position: right bottom 350px;
 }
 
+.contact_me_text {
+  color: #172b4d;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
 .contact .common_title {
   margin-top: 100px;
   padding: 24px;
@@ -328,7 +335,7 @@ body {
   margin: 12px;
   border-radius: 4px;
   font-size: 15px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .contact_input {
@@ -336,22 +343,27 @@ body {
 }
 
 .contact_textarea {
-  border: #36b37f 1px solid;
+  border: #18634b 1px solid;
 }
 
 .contact_textarea:hover,
 .contact_input:hover {
-  border: #36b37f 1px solid;
+  border: #18634b 1px solid;
+}
+
+.contact_input:focus,
+.contact_textarea:focus {
+  background-color: #295b29;
+  color: #fff;
 }
 
 .contact_button {
   padding: 12px;
   margin: 12px 12px 40px 12px;
-  background-color: #36b37f;
+  background-color: #18634b;
   color: white;
   border: none;
   border-radius: 4px;
-  width: 125px;
   align-self: center;
   font-size: 17px;
 }
@@ -424,7 +436,7 @@ footer {
   }
 
   .home {
-    background-image: url('images/header-ilustration-desktop@2x.png');
+    background-image: url("images/header-ilustration-desktop@2x.png");
     background-position: inherit;
     padding-bottom: 200px;
   }
@@ -461,6 +473,7 @@ footer {
 
   .about_list {
     flex-direction: row;
+    align-items: stretch;
   }
 
   .about_block {
@@ -487,6 +500,7 @@ footer {
 
   .contact_form {
     flex-basis: 44%;
+    padding-top: 0;
   }
 
   .contact_ind,
@@ -496,6 +510,25 @@ footer {
 
   .contact_block_1 {
     display: flex;
+    margin-left: 135px;
+    margin-right: 86px;
+    align-items: flex-start;
+  }
+
+  .contact_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact_title {
+    color: #172b4d;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 24px;
+    padding-top: 5px;
   }
 
   .contact .home_socialbar {
