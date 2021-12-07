@@ -259,30 +259,42 @@
           action="https://formspree.io/f/moqraknq"
           method="POST"
         >
-          <input
-            type="text"
-            name="name"
-            class="contact_input"
-            required
-            placeholder="Full name"
-            maxlength="30"
-          />
-          <input
-            type="email"
-            name="_replyto"
-            class="contact_input"
-            required
-            placeholder="Email address"
-          />
-          <textarea
-            name="message"
-            class="contact_textarea"
-            cols="30"
-            rows="10"
-            required
-            placeholder="Enter text here"
-            maxlength="500"
-          ></textarea>
+          <div class="form_input">
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="contact_input"
+              required
+              placeholder="Full name"
+              maxlength="30"
+            />
+          </div>
+          <div class="form_input">
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              name="_replyto"
+              id="email"
+              class="contact_input"
+              required
+              placeholder="Email address"
+            />
+          </div>
+          <div class="form_input">
+            <label for="message">Message </label>
+            <textarea
+              id="message"
+              name="message"
+              class="contact_textarea"
+              cols="30"
+              rows="10"
+              required
+              placeholder="Enter text here"
+              maxlength="500"
+            ></textarea>
+          </div>
           <input
             type="submit"
             class="contact_button button"
