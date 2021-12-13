@@ -8,12 +8,49 @@ body {
 }
 
 /*** -----------------  TOOLBAR ----------------- ***/
+.nav_link_mobile {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #3a4a42;
+  text-decoration: none;
+  margin-left: 28px;
+}
+
+.js_close_menu {
+  text-align: right;
+  padding: 10px;
+  color: #67798e;
+}
+
+.navbar_mobile li {
+  margin-bottom: 40px;
+}
+
+.navbar_mobile ul {
+  list-style: none;
+}
+
+.navbar_hidden {
+  display: none;
+}
+
+.navbar_mobile {
+  width: 99%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+}
 
 .toolbar {
   height: 48px;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  position: fixed;
+  background: #fff;
+
+  /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.43); */
 }
 
 .logo {
@@ -59,6 +96,7 @@ body {
   line-height: 52px;
   color: #172b4d;
   padding: 35px 24px 0 24px;
+  margin-top: 100px;
 }
 
 .home_title_green {
@@ -118,7 +156,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  margin: 20px 0;
+  margin: 50px 0 20px 0;
   transition: 100ms;
 }
 
@@ -286,6 +324,7 @@ body {
     url("images/illustration1-about-me-mobile.png");
   background-position: left bottom, 100% -11%;
   background-repeat: no-repeat, no-repeat;
+  margin-top: 20px;
 }
 
 .image {
@@ -310,6 +349,7 @@ body {
   background-image: url("images/illustration1-contact-form-mobile.png");
   background-repeat: no-repeat;
   background-position: right bottom 350px;
+  padding-top: 100px;
 }
 
 .contact_me_text {
@@ -441,6 +481,10 @@ label {
 
   .navbar_desktop_menu li {
     padding: 20px 10px 20px 10px;
+  }
+
+  .navbar_mobile {
+    display: none;
   }
 
   .home {
