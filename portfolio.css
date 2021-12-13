@@ -8,6 +8,38 @@ body {
 }
 
 /*** -----------------  TOOLBAR ----------------- ***/
+.nav_link_mobile {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #3A4A42;
+  text-decoration: none;
+  margin-left: 28px;
+}
+
+.navbar-mobile-close {
+  text-align: right;
+  padding: 10px;
+  color: #67798E;
+}
+
+.navbar-mobile li {
+  margin-bottom: 40px;
+}
+
+.navbar-mobile ul {
+  list-style: none;
+}
+.navbar_hidden {
+  display: none;
+}
+
+.navbar-mobile {
+  width: 95%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+}
 
 .toolbar {
   height: 48px;
