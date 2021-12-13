@@ -12,7 +12,7 @@ body {
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
-  color: #3A4A42;
+  color: #3a4a42;
   text-decoration: none;
   margin-left: 28px;
 }
@@ -20,7 +20,7 @@ body {
 .navbar-mobile-close {
   text-align: right;
   padding: 10px;
-  color: #67798E;
+  color: #67798e;
 }
 
 .navbar-mobile li {
@@ -30,12 +30,13 @@ body {
 .navbar-mobile ul {
   list-style: none;
 }
+
 .navbar_hidden {
   display: none;
 }
 
 .navbar-mobile {
-  width: 95%;
+  width: 99%;
   height: 100%;
   background-color: white;
   position: fixed;
