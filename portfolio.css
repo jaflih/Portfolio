@@ -281,7 +281,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url("images/illustration2-about-me-mobile.png"), url("images/illustration1-about-me-mobile.png");
+  background-image:
+    url("images/illustration2-about-me-mobile.png"),
+    url("images/illustration1-about-me-mobile.png");
   background-position: left bottom, 100% -11%;
   background-repeat: no-repeat, no-repeat;
 }
@@ -312,9 +314,10 @@ body {
 
 .contact_me_text {
   color: #172b4d;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 52px;
+  text-align: center;
 }
 
 .contact .common_title {
@@ -336,6 +339,7 @@ body {
   border-radius: 4px;
   font-size: 15px;
   font-family: "Inter", sans-serif;
+  width: 85%;
 }
 
 .contact_input {
@@ -406,6 +410,10 @@ footer {
 .home_socialbar img:hover {
   border: 1px black solid;
   transition: ease-in all 3s;
+}
+
+label {
+  display: none;
 }
 
 /*** -----------------  DESKTOP VERSION ----------------- ***/
@@ -481,7 +489,9 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url("images/illustration2-about-me-desktop.png"), url("images/illustration1-about-me-desktop.png");
+    background-image:
+      url("images/illustration2-about-me-desktop.png"),
+      url("images/illustration1-about-me-desktop.png");
     background-repeat: no-repeat, no-repeat;
   }
 
@@ -510,7 +520,7 @@ footer {
 
   .contact_block_1 {
     display: flex;
-    margin-left: 135px;
+    margin-left: 70px;
     margin-right: 86px;
     align-items: flex-start;
   }
@@ -520,6 +530,7 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 50%;
   }
 
   .contact_title {
@@ -539,12 +550,19 @@ footer {
     padding: 20px;
   }
 
+  .contact_me_text {
+    text-align: left;
+  }
+
   .contact_icon img {
     padding: 0 0 0 20px;
   }
 
   .contact {
-    background-image: url("images/illustration1-contact-form-desktop.png"), url("images/illustration2-contact-form-desktop.png"), url("images/illustration3-contact-form-desktop.png");
+    background-image:
+      url("images/illustration1-contact-form-desktop.png"),
+      url("images/illustration2-contact-form-desktop.png"),
+      url("images/illustration3-contact-form-desktop.png");
     background-position: 0 75%, 25% 75%, 100% 60%;
     background-size: 11%, 8%, 14%;
     margin-top: 50px;
