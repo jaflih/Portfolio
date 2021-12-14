@@ -195,6 +195,10 @@ body {
   border-radius: 16px;
 }
 
+.popup-hidden {
+  display: none;
+}
+
 .bottom-card h2 {
   color: #172b4d;
 }
@@ -261,9 +265,17 @@ body {
   display: none;
 }
 
+.close_popup_desktop {
+  display: none;
+}
+
+.close_popup_mobile {
+  display: block;
+  background-color: chartreuse;
+}
+
 .popup-modal-bg {
   position: fixed;
-  display: block;
   top: 0;
   left: 0;
   right: 0;
@@ -407,8 +419,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image:
-    url("images/illustration2-about-me-mobile.png"),
+  background-image: url("images/illustration2-about-me-mobile.png"),
     url("images/illustration1-about-me-mobile.png");
   background-position: left bottom, 100% -11%;
   background-repeat: no-repeat, no-repeat;
@@ -548,7 +559,6 @@ label {
   display: block;
 }
 
-
 /*** -----------------  DESKTOP VERSION ----------------- ***/
 
 @media (min-width: 1025px) {
@@ -562,6 +572,14 @@ label {
   }
 
   .mobile-image {
+    display: none;
+  }
+
+  .close_popup_desktop {
+    display: block;
+  }
+
+  .close_popup_mobile {
     display: none;
   }
 
@@ -634,8 +652,7 @@ label {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image:
-      url("images/illustration2-about-me-desktop.png"),
+    background-image: url("images/illustration2-about-me-desktop.png"),
       url("images/illustration1-about-me-desktop.png");
     background-repeat: no-repeat, no-repeat;
   }
@@ -704,8 +721,7 @@ label {
   }
 
   .contact {
-    background-image:
-      url("images/illustration1-contact-form-desktop.png"),
+    background-image: url("images/illustration1-contact-form-desktop.png"),
       url("images/illustration2-contact-form-desktop.png"),
       url("images/illustration3-contact-form-desktop.png");
     background-position: 0 75%, 25% 75%, 100% 60%;
