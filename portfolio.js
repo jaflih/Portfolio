@@ -7,17 +7,16 @@ document.querySelectorAll(".js_menu").forEach((element) =>
 // WINDOWS POPUP
 const project1 = {
   index: 0,
-  name: "Multi-Post Stories Gain+Glory",
-  technologies: ["Ruby on Rails", "CSS", "Javascript", "Html"],
-  image: "",
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  version_link: "",
-  source_link: "",
+  name: "Projet 1",
+  technologies: ["H1", "H2", "H3", "Html"],
+  image: "portfolio.png",
+  description: "lorem",
+  version_link: "version link",
+  source_link: "source link",
 };
 const project2 = {
   index: 1,
-  name: "Multi-Post Stories Gain+Glory",
+  name: "Project 2",
   technologies: ["Ruby on Rails", "CSS", "Javascript", "Html"],
   image: "",
   description:
@@ -101,12 +100,37 @@ for (let i = 0; i < projects.length; i += 1) {
   const cardDataButton = document.createElement("button");
   cardDataButton.classList.add("button");
   cardDataButton.setAttribute("type", "submit");
+  cardDataButton.setAttribute("index-project", projects[i].index);
   cardDataButton.innerText = "See Project";
   cardData.appendChild(cardDataButton);
 }
 
 function openPopup() {
+  const indexProject = this.getAttribute("index-project");
+
   const popup = document.querySelector(".popup-modal-bg");
+  popup.querySelector("h2").innerText = projects[indexProject].name;
+  popup.querySelector(".mobile-image").src =
+    "projects/mobile_" + projects[indexProject].image;
+  popup.querySelector(".desktop-image").src =
+    "projects/" + projects[indexProject].image;
+  popup.querySelector("p").innerHTML = projects[indexProject].description;
+
+  const techContainer = popup.querySelector(".language-content");
+  for (let i = 0; i < projects[indexProject].technologies.length; i += 1) {
+    let techno = document.createElement("li");
+    techno.classList.add("lc1");
+    techno.innerText = projects[indexProject].technologies[i];
+    techContainer.appendChild(techno);
+  }
+  popup
+    .querySelector(".live-button")
+    .setAttribute("href", projects[indexProject].version_link);
+
+  popup
+    .querySelector(".source-button")
+    .setAttribute("href", projects[indexProject].source_link);
+
   popup.classList.remove("popup-hidden");
 }
 
