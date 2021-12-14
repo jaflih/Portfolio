@@ -17,7 +17,7 @@ body {
   margin-left: 28px;
 }
 
-.js_close_menu {
+.navbar_mobile div {
   text-align: right;
   padding: 10px;
   color: #67798e;
