@@ -12,7 +12,6 @@ if (localStorage.getItem('formData') != null) {
   form['email'].value = formData.email;
   form['message'].value = formData.message;
 }
-console.log(localStorage.getItem('formData'));
 
 form.addEventListener('submit', (event) => {
   formData.fullname = form['name'].value;
