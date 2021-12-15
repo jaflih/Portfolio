@@ -7,25 +7,19 @@
     <title>Jihane's Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="portfolio.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-B8RP2GM07B"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8RP2GM07B"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-B8RP2GM07B");
+      gtag('config', 'G-B8RP2GM07B');
     </script>
   </head>
   <body>
@@ -47,11 +41,7 @@
       </nav>
       <a href="#" class="logo"> Welcome </a>
       <nav class="navbar">
-        <img
-          src="images/icons/menu.png"
-          alt="open top navigation menu"
-          class="js_menu"
-        />
+        <img src="images/icons/menu.png" alt="open top navigation menu" class="js_menu" />
       </nav>
       <nav class="navbar_desktop">
         <ul class="navbar_desktop_menu">
@@ -70,9 +60,8 @@
         <span class="home_title_green">I’m a software developer </span>
       </h1>
       <p class="home_text">
-        I can help you build a product , feature or website Look through some of
-        my work and experience! If you like what you see and have a project you
-        need coded, don’t hestiate to contact me.
+        I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project
+        you need coded, don’t hestiate to contact me.
       </p>
       <ul class="home_socialbar">
         <li>
@@ -104,95 +93,39 @@
     </section>
     <!-- END HOME -->
 
+    <!-- POPUP -->
+    <div class="popup-modal popup-hidden">
+      <div class="popup-data">
+        <div class="popup-close">
+          <img src="images/close_popup.png" class="close_popup" alt="close popup" />
+        </div>
+        <div class="popup-image">
+          <img class="popup-mobile-image" src="#" alt="image project on mobile" />
+          <img class="popup-desktop-image" src="#" alt="image project on desktop" />
+        </div>
+        <div class="dflex">
+          <div class="popup-bottom">
+            <h3>Project title</h3>
+            <ul class="popup-bottom-list"></ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt repudiandae nulla eius maiores. Molestiae soluta ipsam
+              perspiciatis corrupti, commodi enim aliquid vitae vero harum reprehenderit esse voluptates quod nam.
+            </p>
+          </div>
+          <div class="popup-bottom-buttons">
+            <a href="#" class="live-button button">See Live <img src="images/icons/seeliveicon.png" alt="icon to see project" /></a>
+            <a href="#" class="source-button button">See Source <img src="images/icons/githubwhite.png" alt="github icon" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END POPUP -->
+
     <!-- RECENT WORKS -->
     <section class="works" id="works">
       <h2 class="common_title">My Recent Works</h2>
       <hr class="separator" />
-      <div class="work_card_list">
-        <div class="work_card">
-          <div class="img_work_card"></div>
-          <div class="data_work_card">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="langagues">
-              <li class="langague_item">Ruby on Rails</li>
-              <li class="langague_item">css</li>
-              <li class="langague_item">JavaScript</li>
-              <li class="langague_item">html</li>
-            </ul>
-            <button class="button" type="submit">See Project</button>
-          </div>
-        </div>
-
-        <div class="work_card">
-          <div class="img_work_card"></div>
-          <div class="data_work_card">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="langagues">
-              <li class="langague_item">Ruby on Rails</li>
-              <li class="langague_item">css</li>
-              <li class="langague_item">JavaScript</li>
-              <li class="langague_item">html</li>
-            </ul>
-            <button class="button" type="submit">See Project</button>
-          </div>
-        </div>
-
-        <div class="work_card">
-          <div class="img_work_card"></div>
-          <div class="data_work_card">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="langagues">
-              <li class="langague_item">Ruby on Rails</li>
-              <li class="langague_item">css</li>
-              <li class="langague_item">JavaScript</li>
-              <li class="langague_item">html</li>
-            </ul>
-            <button class="button" type="submit">See Project</button>
-          </div>
-        </div>
-
-        <div class="work_card">
-          <div class="img_work_card"></div>
-          <div class="data_work_card">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="langagues">
-              <li class="langague_item">Ruby on Rails</li>
-              <li class="langague_item">css</li>
-              <li class="langague_item">JavaScript</li>
-              <li class="langague_item">html</li>
-            </ul>
-            <button class="button" type="submit">See Project</button>
-          </div>
-        </div>
-
-        <div class="work_card">
-          <div class="img_work_card"></div>
-          <div class="data_work_card">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="langagues">
-              <li class="langague_item">Ruby on Rails</li>
-              <li class="langague_item">css</li>
-              <li class="langague_item">JavaScript</li>
-              <li class="langague_item">html</li>
-            </ul>
-            <button class="button" type="submit">See Project</button>
-          </div>
-        </div>
-
-        <div class="work_card">
-          <div class="img_work_card"></div>
-          <div class="data_work_card">
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="langagues">
-              <li class="langague_item">Ruby on Rails</li>
-              <li class="langague_item">css</li>
-              <li class="langague_item">JavaScript</li>
-              <li class="langague_item">html</li>
-            </ul>
-            <button class="button" type="submit">See Project</button>
-          </div>
-        </div>
-      </div>
+      <div class="work_card_list" id="card_list"></div>
     </section>
     <!-- END RECENT WORKS -->
 
@@ -201,8 +134,7 @@
       <div class="about_block">
         <h2 class="common_title">About me</h2>
         <p class="about_text">
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
+          I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project
           you need coded, don’t hestiate to contact me.
         </p>
         <button class="button" type="submit">Get My Resume</button>
@@ -211,11 +143,7 @@
       <ul class="about_list">
         <li class="about_items">
           <div class="about_card">
-            <img
-              class="image"
-              src="images/icons/terre.png"
-              alt="langagues section icon"
-            />
+            <img class="image" src="images/icons/terre.png" alt="langagues section icon" />
             <h3>Langagues</h3>
             <ul class="about_card_list">
               <li class="about_card_item">JavaScript</li>
@@ -227,11 +155,7 @@
         </li>
         <li class="about_items">
           <div class="about_card">
-            <img
-              class="image"
-              src="images/icons/cubes.png"
-              alt="Frameworks section icon"
-            />
+            <img class="image" src="images/icons/cubes.png" alt="Frameworks section icon" />
             <h3>Frameworks</h3>
             <ul class="about_card_list">
               <li class="about_card_item">Bootstrap</li>
@@ -244,11 +168,7 @@
         </li>
         <li class="about_items">
           <div class="about_card">
-            <img
-              class="image"
-              src="images/icons/eclaire.png"
-              alt="skills section icon"
-            />
+            <img class="image" src="images/icons/eclaire.png" alt="skills section icon" />
             <h3>Skills</h3>
             <ul class="about_card_list">
               <li class="about_card_item">Codekit</li>
@@ -267,38 +187,16 @@
     <footer class="contact" id="contact">
       <div class="contact_block_1">
         <div class="contact_header">
-          <p class="contact_me_text">
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
-          </p>
+          <p class="contact_me_text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
         </div>
-        <form
-          class="contact_form"
-          action="https://formspree.io/f/moqraknq"
-          method="POST"
-        >
+        <form class="contact_form" action="https://formspree.io/f/moqraknq" method="POST">
           <div class="form_input">
             <label for="name">Full Name:</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="contact_input"
-              required
-              placeholder="Full name"
-              maxlength="30"
-            />
+            <input type="text" name="name" id="name" class="contact_input" required placeholder="Full name" maxlength="30" />
           </div>
           <div class="form_input">
             <label for="email">E-mail:</label>
-            <input
-              type="email"
-              name="_replyto"
-              id="email"
-              class="contact_input"
-              required
-              placeholder="Email address"
-            />
+            <input type="email" name="_replyto" id="email" class="contact_input" required placeholder="Email address" />
           </div>
           <div class="form_input">
             <label for="message">Message </label>
@@ -313,11 +211,7 @@
               maxlength="500"
             ></textarea>
           </div>
-          <input
-            type="submit"
-            class="contact_button button"
-            value="Get It Touch"
-          />
+          <input type="submit" class="contact_button button" value="Get It Touch" />
         </form>
       </div>
 
@@ -350,14 +244,10 @@
       </ul>
       <p class="contact_email">jihane@email.com</p>
       <div class="contact_ind_block">
-        <img
-          class="contact_ind"
-          src="./images/icons/home-indicator.png"
-          alt="hotizontal black line indicating bottom of the page"
-        />
+        <img class="contact_ind" src="./images/icons/home-indicator.png" alt="hotizontal black line indicating bottom of the page" />
       </div>
     </footer>
     <!-- END FOOTER -->
-    <script src="portfolio.js"></script>
+    <script type="module" src="portfolio.js"></script>
   </body>
 </html>
