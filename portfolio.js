@@ -62,3 +62,11 @@ function closeProjectPopup() {
 document.querySelectorAll('.button').forEach((element) => element.addEventListener('click', openProjectPopup));
 
 document.querySelector('.close_popup').addEventListener('click', closeProjectPopup);
+
+/* VALIDATE THE FORM */
+document.querySelector('form').addEventListener('submit', (event) => {
+  if (event.target.email.value.match(/[A-Z]/g)) {
+    document.querySelector('small').classList.remove('message_hidden');
+    event.preventDefault();
+  }
+});
