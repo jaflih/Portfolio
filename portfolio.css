@@ -368,7 +368,6 @@ body {
   color: #42526e;
 }
 
-
 .about_card {
   display: flex;
   flex-direction: column;
@@ -431,7 +430,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url("images/illustration2-about-me-mobile.png"),
+  background-image:
+    url("images/illustration2-about-me-mobile.png"),
     url("images/illustration1-about-me-mobile.png");
   background-position: left bottom, 100% -11%;
   background-repeat: no-repeat, no-repeat;
@@ -671,7 +671,8 @@ label {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url("images/illustration2-about-me-desktop.png"),
+    background-image:
+      url("images/illustration2-about-me-desktop.png"),
       url("images/illustration1-about-me-desktop.png");
     background-repeat: no-repeat, no-repeat;
   }
@@ -740,7 +741,8 @@ label {
   }
 
   .contact {
-    background-image: url("images/illustration1-contact-form-desktop.png"),
+    background-image:
+      url("images/illustration1-contact-form-desktop.png"),
       url("images/illustration2-contact-form-desktop.png"),
       url("images/illustration3-contact-form-desktop.png");
     background-position: 0 75%, 25% 75%, 100% 60%;

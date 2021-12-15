@@ -1,85 +1,63 @@
+import projects from './projects.js';
+
 /* MOBILE MENU */
-document.querySelectorAll('.js_menu').forEach((element) =>
-  element.addEventListener('click', () => {
-    document.querySelector('.navbar_mobile').classList.toggle('navbar_hidden');
-  })
-);
+document.querySelectorAll('.js_menu').forEach((element) => element.addEventListener('click', () => {
+  document.querySelector('.navbar_mobile').classList.toggle('navbar_hidden');
+}));
 
-/* GENERATE WORK SECTION */
+/* WINDOWS PROJECT POPUP */
+/* GENERATE PROJECTS ON WORK SECTION */
 
-// Create a new HTML element, add a class and append it to its parent
-function createElement(elementName, elementClass, parent) {
-  let element = document.createElement(elementName);
+// Create a new HTML element, add a class and innerhtml and append it to its parent
+function createElement(parent, elementName, elementClass, innerHTML = null) {
+  const element = document.createElement(elementName);
   element.classList.add(elementClass);
+  element.innerHTML = innerHTML;
   parent.appendChild(element);
   return element;
 }
 
+// Generate the HTML project section
 for (let i = 0; i < projects.length; i += 1) {
-  const card = createElement('div', 'work_card', document.getElementById('card_list'));
-
-  const cardImage = createElement('div', 'img_work_card', card);
-
-  const cardData = document.createElement('div');
-  cardData.classList.add('data_work_card');
-  card.appendChild(cardData);
-
-  const cardDataH3 = document.createElement('h3');
-  cardDataH3.innerHTML = projects[i].name;
-  cardDataH3.classList.add('data_work_card');
-  cardData.appendChild(cardDataH3);
-
-  const cardDataUl = document.createElement('ul');
-  cardDataUl.classList.add('langagues');
-  cardData.appendChild(cardDataUl);
+  const card = createElement(document.getElementById('card_list'), 'div', 'work_card');
+  createElement(card, 'div', 'img_work_card');
+  const cardData = createElement(card, 'div', 'data_work_card');
+  createElement(cardData, 'h3', 'data_work_card', projects[i].name);
+  const cardDataUl = createElement(cardData, 'ul', 'langagues');
 
   for (let j = 0; j < projects[i].technologies.length; j += 1) {
-    const cardDataLi = document.createElement('li');
-    cardDataLi.innerText = projects[i].technologies[j];
-    cardDataLi.classList.add('langague_item');
-    cardDataUl.appendChild(cardDataLi);
+    createElement(cardDataUl, 'li', 'langague_item', projects[i].technologies[j]);
   }
 
-  const cardDataButton = document.createElement('button');
-  cardDataButton.classList.add('button');
+  const cardDataButton = createElement(cardData, 'button', 'button', 'See Project');
   cardDataButton.setAttribute('type', 'submit');
   cardDataButton.setAttribute('index-project', projects[i].index);
-  cardDataButton.innerText = 'See Project';
-  cardData.appendChild(cardDataButton);
 }
 
-// WINDOWS POPUP
-function openPopup() {
+// open the project in the popup and update project data in the popup
+function openProjectPopup() {
   const indexProject = this.getAttribute('index-project');
-
   const popup = document.querySelector('.popup-modal-bg');
   popup.querySelector('h2').innerText = projects[indexProject].name;
-  popup.querySelector('.mobile-image').src = 'projects/mobile_' + projects[indexProject].image;
-  popup.querySelector('.desktop-image').src = 'projects/' + projects[indexProject].image;
+  popup.querySelector('.mobile-image').src = `projects/mobile_${projects[indexProject].image}`;
+  popup.querySelector('.desktop-image').src = `projects/${projects[indexProject].image}`;
   popup.querySelector('p').innerHTML = projects[indexProject].description;
 
   const techContainer = popup.querySelector('.language-content');
   for (let i = 0; i < projects[indexProject].technologies.length; i += 1) {
-    let techno = document.createElement('li');
-    techno.classList.add('lc1');
-    techno.innerText = projects[indexProject].technologies[i];
-    techContainer.appendChild(techno);
+    createElement(techContainer, 'li', 'lc1', projects[indexProject].technologies[i]);
   }
+
   popup.querySelector('.live-button').setAttribute('href', projects[indexProject].version_link);
-
   popup.querySelector('.source-button').setAttribute('href', projects[indexProject].source_link);
-
   popup.classList.remove('popup-hidden');
 }
 
-function closePopup() {
-  const popup = document.querySelector('.popup-modal-bg');
-  popup.classList.add('popup-hidden');
+// close the project popup
+function closeProjectPopup() {
+  document.querySelector('.popup-modal-bg').classList.add('popup-hidden');
 }
 
-const buttons = document.querySelectorAll('.button');
-buttons.forEach((element) => element.addEventListener('click', openPopup));
+document.querySelectorAll('.button').forEach((element) => element.addEventListener('click', openProjectPopup));
 
-const closeButtons = document.querySelectorAll('.close_popup_mobile, .close_popup_desktop');
-
-closeButtons.forEach((element) => element.addEventListener('click', closePopup));
+document.querySelectorAll('.close_popup_mobile, .close_popup_desktop').forEach((element) => element.addEventListener('click', closeProjectPopup));
