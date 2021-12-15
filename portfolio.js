@@ -37,15 +37,16 @@ for (let i = 0; i < projects.length; i += 1) {
 // open the project in the popup and update project data in the popup
 function openProjectPopup() {
   const indexProject = this.getAttribute('index-project');
-  const popup = document.querySelector('.popup-modal-bg');
-  popup.querySelector('h2').innerText = projects[indexProject].name;
-  popup.querySelector('.mobile-image').src = `projects/mobile_${projects[indexProject].image}`;
-  popup.querySelector('.desktop-image').src = `projects/${projects[indexProject].image}`;
+  const popup = document.querySelector('.popup-modal');
+  popup.querySelector('h3').innerText = projects[indexProject].name;
+  popup.querySelector('.popup-mobile-image').src = `projects/mobile_${projects[indexProject].image}`;
+  popup.querySelector('.popup-desktop-image').src = `projects/${projects[indexProject].image}`;
   popup.querySelector('p').innerHTML = projects[indexProject].description;
 
-  const techContainer = popup.querySelector('.language-content');
+  const techContainer = popup.querySelector('.popup-bottom-list');
+  techContainer.innerHTML = '';
   for (let i = 0; i < projects[indexProject].technologies.length; i += 1) {
-    createElement(techContainer, 'li', 'lc1', projects[indexProject].technologies[i]);
+    createElement(techContainer, 'li', 'popup-li', projects[indexProject].technologies[i]);
   }
 
   popup.querySelector('.live-button').setAttribute('href', projects[indexProject].version_link);
@@ -55,9 +56,9 @@ function openProjectPopup() {
 
 // close the project popup
 function closeProjectPopup() {
-  document.querySelector('.popup-modal-bg').classList.add('popup-hidden');
+  document.querySelector('.popup-modal').classList.add('popup-hidden');
 }
 
 document.querySelectorAll('.button').forEach((element) => element.addEventListener('click', openProjectPopup));
 
-document.querySelectorAll('.close_popup_mobile, .close_popup_desktop').forEach((element) => element.addEventListener('click', closeProjectPopup));
+document.querySelector('.close_popup').addEventListener('click', closeProjectPopup);

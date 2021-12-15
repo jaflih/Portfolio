@@ -92,31 +92,33 @@
       </ul>
     </section>
     <!-- END HOME -->
-    <div class="popup-modal-bg popup-hidden">
+
+    <!-- POPUP -->
+    <div class="popup-modal popup-hidden">
       <div class="popup-data">
-        <i class="fa fa-times"></i>
-        <div class="project-images">
-          <img src="images/desktopDisabled.png" class="close_popup_desktop" alt="close popup" />
-          <img src="images/mobile_cancel.png" class="close_popup_mobile" alt="close popup" />
+        <div class="popup-close">
+          <img src="images/close_popup.png" class="close_popup" alt="close popup" />
         </div>
-        <div class="img">
-          <img class="mobile-image" src="#" alt="image project on mobile" />
-          <img class="desktop-image" src="#" alt="image project on desktop" />
+        <div class="popup-image">
+          <img class="popup-mobile-image" src="#" alt="image project on mobile" />
+          <img class="popup-desktop-image" src="#" alt="image project on desktop" />
         </div>
-        <div class="bottom-card">
-          <h2>keeping track of hundreds of components</h2>
-          <ul class="language-content"></ul>
+        <div class="popup-bottom">
+          <h3></h3>
+          <ul class="popup-bottom-list"></ul>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt repudiandae nulla eius maiores. Molestiae soluta ipsam
             perspiciatis corrupti, commodi enim aliquid vitae vero harum reprehenderit esse voluptates quod nam.
           </p>
         </div>
         <div>
-          <a href="#" class="live-button">See Live</a>
-          <a href="#" class="source-button">See Source</a>
+          <a href="#" class="live-button popup-bottom-button">See Live <img src="images/icons/seeliveicon.png" /></a>
+          <a href="#" class="source-button popup-bottom-button">See Source <img src="images/icons/githubwhite.png" /></a>
         </div>
       </div>
     </div>
+    <!-- END POPUP -->
+
     <!-- RECENT WORKS -->
     <section class="works" id="works">
       <h2 class="common_title">My Recent Works</h2>
