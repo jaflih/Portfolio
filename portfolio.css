@@ -368,6 +368,7 @@ body {
   color: #42526e;
 }
 
+
 .about_card {
   display: flex;
   flex-direction: column;
@@ -574,6 +575,7 @@ label {
   justify-content: end;
   display: flex;
 }
+
 
 /*** -----------------  DESKTOP VERSION ----------------- ***/
 
