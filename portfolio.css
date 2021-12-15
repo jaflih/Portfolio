@@ -191,6 +191,7 @@ body {
   bottom: 0;
   background-color: #c1c7d0;
   overflow-y: scroll;
+  z-index: 999;
 }
 
 .popup-data {
@@ -568,6 +569,14 @@ label {
   .close_popup,
   .popup-desktop-image {
     display: block;
+  }
+
+  .dflex {
+    display: flex;
+  }
+
+  .popup-bottom-buttons {
+    flex-shrink: 0;
   }
 
   .toolbar {
