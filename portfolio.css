@@ -162,7 +162,8 @@ body {
   color: #18634b;
 }
 
-.button {
+.button,
+.button_green {
   background-color: #18634b;
   color: white;
   text-decoration: none;
@@ -551,6 +552,14 @@ footer {
 .home_socialbar img:hover {
   border: 1px black solid;
   transition: ease-in all 3s;
+}
+
+.message_hidden {
+  display: none;
+}
+
+small {
+  color: red;
 }
 
 label {
