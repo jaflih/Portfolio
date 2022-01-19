@@ -20,7 +20,10 @@ function createElement(parent, elementName, elementClass, innerHTML = null) {
 // Generate the HTML project section
 for (let i = 0; i < projects.length; i += 1) {
   const card = createElement(document.getElementById('card_list'), 'div', 'work_card');
-  createElement(card, 'div', 'img_work_card');
+  const cardDiv = createElement(card, 'div', 'img_work_card');
+  const cardImg = createElement(cardDiv, 'img', 'image_work_card');
+  cardImg.src = `projects/th_${projects[i].image}`;
+
   const cardData = createElement(card, 'div', 'data_work_card');
   createElement(cardData, 'h3', 'data_work_card', projects[i].name);
   const cardDataUl = createElement(cardData, 'ul', 'langagues');
@@ -50,7 +53,10 @@ function openProjectPopup() {
   }
 
   popup.querySelector('.live-button').setAttribute('href', projects[indexProject].version_link);
+  popup.querySelector('.live-button').setAttribute('target', '_blank');
   popup.querySelector('.source-button').setAttribute('href', projects[indexProject].source_link);
+  popup.querySelector('.source-button').setAttribute('target', '_blank');
+
   popup.classList.remove('popup-hidden');
 }
 
