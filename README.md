@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://jihaneh.github.io/Portfolio/)
+[Live Demo Link](https://jaflih.github.io/Portfolio/)
 
 ## Getting Started
 
@@ -25,9 +25,8 @@ Download the project, unzip it and open index.html file in the browser
 
 👤 **JihaneH**
 
-- GitHub: [@githubhandle](https://github.com/jihaneH)
-- Twitter: [@twitterhandle](https://twitter.com/jijihaddad)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/jihane-haddad/)
+- GitHub: [@githubhandle](https://github.com/jaflih)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/jihanne/)
 
 ## 🤝 Contributing
 
