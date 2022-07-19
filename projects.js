@@ -56,6 +56,6 @@ const project6 = {
   source_link: 'https://github.com/',
 };
 
-const projects = [project1, project2, project3, project4, project5, project6];
+const projects = [project1, project2, project3];
 
 export default projects;
