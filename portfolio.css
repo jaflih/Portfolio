@@ -725,7 +725,9 @@ label {
   }
 
   .contact {
-    background-image: url('images/illustration1-contact-form-desktop.png'), url('images/illustration2-contact-form-desktop.png'),
+    background-image:
+      url('images/illustration1-contact-form-desktop.png'),
+      url('images/illustration2-contact-form-desktop.png'),
       url('images/illustration3-contact-form-desktop.png');
     background-position: 0 75%, 25% 75%, 100% 60%;
     background-size: 11%, 8%, 14%;
