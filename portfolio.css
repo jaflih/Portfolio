@@ -36,10 +36,11 @@ body {
 }
 
 .navbar_mobile {
-  width: 99%;
-  height: 100%;
+  width: 99vw;
+  height: 100vh;
   background-color: white;
   position: fixed;
+  top: 0;
 }
 
 .toolbar {
@@ -49,6 +50,10 @@ body {
   width: 100%;
   position: fixed;
   background: #fff;
+  border-bottom: 1px solid #e96269;
+  padding: 10px 0;
+  align-items: center;
+  z-index: 99;
 }
 
 .logo {
@@ -76,12 +81,22 @@ body {
 
 /*** -----------------  HOME ----------------- ***/
 .home {
-  background-image: url('images/header-illsutration-mobile@1x.png');
+  background-image: url('images/laptop.jpg');
   background-position: center 25%;
   background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_div {
+  background-color: white;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -94,11 +109,10 @@ body {
   line-height: 52px;
   color: #172b4d;
   padding: 35px 24px 0 24px;
-  margin-top: 100px;
 }
 
 .home_title_green {
-  color: #18634b;
+  color: #e96269;
 }
 
 .home_text {
@@ -124,7 +138,6 @@ body {
 .home_socialbar img {
   padding: 20px 20px 20px 20px;
   transition: 3s all ease-in;
-  border-color: #18634b;
 }
 
 .navbar_desktop_menu a {
@@ -153,8 +166,8 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172b4d;
-  margin: 50px 0 20px 0;
+  color: #e96269;
+  margin: 70px 0 20px 0;
   transition: 100ms;
 }
 
@@ -164,7 +177,7 @@ body {
 
 .button,
 .button_green {
-  background-color: #18634b;
+  background-color: #e96269;
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -291,7 +304,7 @@ body {
 .work_card_list {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .separator {
@@ -299,14 +312,14 @@ body {
   height: 4px;
   border-radius: 24px;
   border: none;
-  background: #18634b;
+  background: #e96269;
   margin-bottom: 60px;
 }
 
 .work_card {
   display: flex;
   flex-direction: column;
-  border: 1px solid #d0d9d4;
+  border: 1px solid #e9626930;
   border-radius: 8px;
   margin: 0 20px 20px 20px;
 }
@@ -314,6 +327,11 @@ body {
 .img_work_card {
   background-color: #ebf0ee;
   height: 252px;
+}
+
+.img_work_card img {
+  width: 100%;
+  max-height: 100%;
 }
 
 .langagues {
@@ -335,18 +353,25 @@ body {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color: #3a4a42;
+  color: #e96269;
   padding: 16px 16px 16px 16px;
 }
 
 .data_work_card li {
   background-color: #ebf0ee;
-  color: #3a4a42;
+  color: #e96269;
   padding: 8px 12px 8px 12px;
   margin: 8px;
-  font-weight: 600;
+  font-weight: 200;
   font-size: 12px;
   line-height: 16px;
+}
+
+.data_button {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 /*** -----------------  ABOUT ----------------- ***/
@@ -366,6 +391,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
+  width: 90%;
+  margin: 10px;
+  border: 1px solid #e9626930;
 }
 
 .about_list {
@@ -389,7 +417,6 @@ body {
 
 .about_card_item {
   background-color: white;
-  color: #18634b;
   padding: 8px 12px 8px 12px;
   margin: 8px;
   font-weight: 600;
@@ -415,7 +442,6 @@ body {
   justify-content: center;
   list-style: none;
   padding-left: 0;
-  max-width: 310px;
 }
 
 .about_block {
@@ -423,9 +449,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url('images/illustration2-about-me-mobile.png'), url('images/illustration1-about-me-mobile.png');
-  background-position: left bottom, 100% -11%;
-  background-repeat: no-repeat, no-repeat;
   margin-top: 20px;
 }
 
@@ -435,23 +458,39 @@ body {
   animation-iteration-count: infinite;
 }
 
-@keyframes bigger {
-  from {
-    transform: translateX(0);
-  }
+.skills_div {
+  width: 95%;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  to {
-    transform: translateX(10px);
-  }
+.skills_div h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.langagues_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.langagues_item img {
+  width: 40px;
+  height: 40px;
 }
 
 /*** -----------------  FOOTER ----------------- ***/
 
 .contact {
-  background-image: url('images/illustration1-contact-form-mobile.png');
-  background-repeat: no-repeat;
-  background-position: right bottom 350px;
-  padding-top: 100px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact_me_text {
@@ -463,8 +502,6 @@ body {
 }
 
 .contact .common_title {
-  margin-top: 100px;
-  padding: 24px;
   text-align: center;
 }
 
@@ -489,24 +526,18 @@ body {
 }
 
 .contact_textarea {
-  border: #18634b 1px solid;
+  border: #d0d9d4 1px solid;
 }
 
 .contact_textarea:hover,
 .contact_input:hover {
-  border: #18634b 1px solid;
-}
-
-.contact_input:focus,
-.contact_textarea:focus {
-  background-color: #295b29;
-  color: #fff;
+  border: 1px solid #e9626930;
 }
 
 .contact_button {
   padding: 12px;
   margin: 12px 12px 40px 12px;
-  background-color: #18634b;
+  background-color: #e96269;
   color: white;
   border: none;
   border-radius: 4px;
@@ -549,11 +580,6 @@ footer {
   flex-direction: column;
 }
 
-.home_socialbar img:hover {
-  border: 1px black solid;
-  transition: ease-in all 3s;
-}
-
 .message_hidden {
   display: none;
 }
@@ -569,7 +595,6 @@ label {
 /*** -----------------  DESKTOP VERSION ----------------- ***/
 
 @media (min-width: 1025px) {
-  .logo,
   .navbar,
   .popup-mobile-image {
     display: none;
@@ -589,12 +614,12 @@ label {
   }
 
   .toolbar {
-    justify-content: center;
     margin-bottom: 100px;
   }
 
   .navbar_desktop {
     display: inherit;
+    margin-right: 20px;
   }
 
   .navbar_desktop_menu {
@@ -612,9 +637,15 @@ label {
   }
 
   .home {
-    background-image: url('images/header-ilustration-desktop@2x.png');
+    background-image: url('images/laptop.jpg');
     background-position: inherit;
-    padding-bottom: 200px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .home_div {
+    width: 60%;
+    height: 60%;
   }
 
   .home_text {
@@ -657,21 +688,11 @@ label {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url('images/illustration2-about-me-desktop.png'), url('images/illustration1-about-me-desktop.png');
-    background-repeat: no-repeat, no-repeat;
   }
 
   footer {
     flex-direction: row;
     align-items: center;
-  }
-
-  .contact .common_title {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 52px;
-    flex-basis: 40%;
-    margin-top: 100px;
   }
 
   .contact_form {
@@ -722,14 +743,6 @@ label {
 
   .contact_icon img {
     padding: 0 0 0 20px;
-  }
-
-  .contact {
-    background-image: url('images/illustration1-contact-form-desktop.png'), url('images/illustration2-contact-form-desktop.png'),
-      url('images/illustration3-contact-form-desktop.png');
-    background-position: 0 75%, 25% 75%, 100% 60%;
-    background-size: 11%, 8%, 14%;
-    margin-top: 50px;
   }
 
   .contact_button {
