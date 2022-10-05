@@ -303,7 +303,7 @@ body {
 .work_card_list {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .separator {
@@ -385,6 +385,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
+  width: 90%;
+  margin: 10px;
+  border: 1px solid #e9626930;
 }
 
 .about_list {
@@ -408,7 +411,6 @@ body {
 
 .about_card_item {
   background-color: white;
-  color: #18634b;
   padding: 8px 12px 8px 12px;
   margin: 8px;
   font-weight: 600;
@@ -434,7 +436,6 @@ body {
   justify-content: center;
   list-style: none;
   padding-left: 0;
-  max-width: 310px;
 }
 
 .about_block {
@@ -442,9 +443,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url('images/illustration2-about-me-mobile.png'), url('images/illustration1-about-me-mobile.png');
-  background-position: left bottom, 100% -11%;
-  background-repeat: no-repeat, no-repeat;
   margin-top: 20px;
 }
 
@@ -454,22 +452,34 @@ body {
   animation-iteration-count: infinite;
 }
 
-@keyframes bigger {
-  from {
-    transform: translateX(0);
-  }
+.skills_div {
+  width: 100%;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  to {
-    transform: translateX(10px);
-  }
+.skills_div h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.langagues_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.langagues_item img {
+  width: 40px;
+  height: 40px;
 }
 
 /*** -----------------  FOOTER ----------------- ***/
 
 .contact {
-  background-image: url('images/illustration1-contact-form-mobile.png');
-  background-repeat: no-repeat;
-  background-position: right bottom 350px;
   padding-top: 100px;
 }
 
@@ -676,8 +686,6 @@ label {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url('images/illustration2-about-me-desktop.png'), url('images/illustration1-about-me-desktop.png');
-    background-repeat: no-repeat, no-repeat;
   }
 
   footer {
@@ -744,12 +752,6 @@ label {
   }
 
   .contact {
-    background-image:
-      url('images/illustration1-contact-form-desktop.png'),
-      url('images/illustration2-contact-form-desktop.png'),
-      url('images/illustration3-contact-form-desktop.png');
-    background-position: 0 75%, 25% 75%, 100% 60%;
-    background-size: 11%, 8%, 14%;
     margin-top: 50px;
   }
 
