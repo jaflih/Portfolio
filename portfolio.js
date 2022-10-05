@@ -32,40 +32,33 @@ for (let i = 0; i < projects.length; i += 1) {
     createElement(cardDataUl, 'li', 'langague_item', projects[i].technologies[j]);
   }
 
-  const cardDataButton = createElement(cardData, 'button', 'button', 'See Project');
+  const cardDataButtonDiv = createElement(cardData, 'div', 'data_button');
+
+  const cardDataButton = createElement(cardDataButtonDiv, 'a', 'button', 'See Project');
   cardDataButton.setAttribute('type', 'submit');
-  cardDataButton.setAttribute('index-project', projects[i].index);
-}
+  cardDataButton.setAttribute('href', projects[i].version_link);
+  cardDataButton.setAttribute('target', '_blank');
 
-// open the project in the popup and update project data in the popup
-function openProjectPopup() {
-  const indexProject = this.getAttribute('index-project');
-  const popup = document.querySelector('.popup-modal');
-  popup.querySelector('h3').innerText = projects[indexProject].name;
-  popup.querySelector('.popup-mobile-image').src = `projects/mobile_${projects[indexProject].image}`;
-  popup.querySelector('.popup-desktop-image').src = `projects/${projects[indexProject].image}`;
-  popup.querySelector('p').innerHTML = projects[indexProject].description;
+  const cardDataButtonImg = createElement(cardDataButton, 'img');
+  cardDataButtonImg.setAttribute('src', 'images/icons/seeliveicon.png');
+  cardDataButtonImg.setAttribute('alt', 'icon to see project');
+  cardDataButtonImg.setAttribute('style', 'width: 10px;margin-left: 10px;');
 
-  const techContainer = popup.querySelector('.popup-bottom-list');
-  techContainer.innerHTML = '';
-  for (let i = 0; i < projects[indexProject].technologies.length; i += 1) {
-    createElement(techContainer, 'li', 'popup-li', projects[indexProject].technologies[i]);
-  }
+  const cardDataButton2 = createElement(cardDataButtonDiv, 'a', 'button', 'See Source');
+  cardDataButton2.setAttribute('type', 'submit');
+  cardDataButton2.setAttribute('href', projects[i].source_link);
+  cardDataButton2.setAttribute('target', '_blank');
 
-  popup.querySelector('.live-button').setAttribute('href', projects[indexProject].version_link);
-  popup.querySelector('.live-button').setAttribute('target', '_blank');
-  popup.querySelector('.source-button').setAttribute('href', projects[indexProject].source_link);
-  popup.querySelector('.source-button').setAttribute('target', '_blank');
-
-  popup.classList.remove('popup-hidden');
+  const cardDataButtonImgGit = createElement(cardDataButton2, 'img');
+  cardDataButtonImgGit.setAttribute('src', 'images/icons/githubwhite.png');
+  cardDataButtonImgGit.setAttribute('alt', 'github icon');
+  cardDataButtonImgGit.setAttribute('style', 'width: 10px;margin-left: 10px;');
 }
 
 // close the project popup
 function closeProjectPopup() {
   document.querySelector('.popup-modal').classList.add('popup-hidden');
 }
-
-document.querySelectorAll('.button').forEach((element) => element.addEventListener('click', openProjectPopup));
 
 document.querySelector('.close_popup').addEventListener('click', closeProjectPopup);
 

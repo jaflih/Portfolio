@@ -165,7 +165,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172b4d;
+  color: #e96269;
   margin: 50px 0 20px 0;
   transition: 100ms;
 }
@@ -176,7 +176,7 @@ body {
 
 .button,
 .button_green {
-  background-color: #18634b;
+  background-color: #e96269;
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -311,14 +311,14 @@ body {
   height: 4px;
   border-radius: 24px;
   border: none;
-  background: #18634b;
+  background: #e96269;
   margin-bottom: 60px;
 }
 
 .work_card {
   display: flex;
   flex-direction: column;
-  border: 1px solid #d0d9d4;
+  border: 1px solid #e9626930;
   border-radius: 8px;
   margin: 0 20px 20px 20px;
 }
@@ -347,18 +347,25 @@ body {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color: #3a4a42;
+  color: #e96269;
   padding: 16px 16px 16px 16px;
 }
 
 .data_work_card li {
   background-color: #ebf0ee;
-  color: #3a4a42;
+  color: #e96269;
   padding: 8px 12px 8px 12px;
   margin: 8px;
-  font-weight: 600;
+  font-weight: 200;
   font-size: 12px;
   line-height: 16px;
+}
+
+.data_button {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 /*** -----------------  ABOUT ----------------- ***/
