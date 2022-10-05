@@ -49,6 +49,9 @@ body {
   width: 100%;
   position: fixed;
   background: #fff;
+  border-bottom: 1px solid #e96269;
+  padding: 10px 0;
+  align-items: center;
 }
 
 .logo {
@@ -569,7 +572,6 @@ label {
 /*** -----------------  DESKTOP VERSION ----------------- ***/
 
 @media (min-width: 1025px) {
-  .logo,
   .navbar,
   .popup-mobile-image {
     display: none;
@@ -589,12 +591,12 @@ label {
   }
 
   .toolbar {
-    justify-content: center;
     margin-bottom: 100px;
   }
 
   .navbar_desktop {
     display: inherit;
+    margin-right: 20px;
   }
 
   .navbar_desktop_menu {
