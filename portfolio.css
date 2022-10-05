@@ -36,10 +36,11 @@ body {
 }
 
 .navbar_mobile {
-  width: 99%;
-  height: 100%;
+  width: 99vw;
+  height: 100vh;
   background-color: white;
   position: fixed;
+  top: 0;
 }
 
 .toolbar {
@@ -166,7 +167,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   color: #e96269;
-  margin: 50px 0 20px 0;
+  margin: 70px 0 20px 0;
   transition: 100ms;
 }
 
@@ -328,6 +329,11 @@ body {
   height: 252px;
 }
 
+.img_work_card img {
+  width: 100%;
+  max-height: 100%;
+}
+
 .langagues {
   list-style: none;
   padding-left: 0;
@@ -453,7 +459,7 @@ body {
 }
 
 .skills_div {
-  width: 100%;
+  width: 95%;
   padding: 30px 10px;
   display: flex;
   flex-direction: column;
