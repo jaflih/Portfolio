@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="portfolio.css" />
-
+    <script src="https://kit.fontawesome.com/96d5778ce2.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8RP2GM07B"></script>
     <script>
@@ -23,273 +23,244 @@
     </script>
   </head>
   <body>
-    <!-- TOOLBAR -->
-    <header class="toolbar">
+    <main>
+      <!-- TOOLBAR -->
+      <header class="toolbar">
+        <nav class="navbar">
+          <i class="fa-solid fa-bars js_menu"></i>
+        </nav>
+      </header>
       <nav class="navbar_mobile navbar_hidden">
-        <div class="js_menu">
-          <img src="images/icons/cancel.png" alt="close top navigation menu" />
-        </div>
-        <ul class="navbar_mobile_menu">
-          <li>
-            <a class="js_menu nav_link_mobile" href="#home">Welcome</a>
-          </li>
-          <li>
-            <a class="js_menu nav_link_mobile" href="#works">My Recent Works</a>
-          </li>
-          <li><a class="js_menu nav_link_mobile" href="#about">About</a></li>
-          <li>
-            <a class="js_menu nav_link_mobile" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="#" class="logo"> Jihane Aflih </a>
-      <nav class="navbar">
-        <img src="images/icons/menu.png" alt="open top navigation menu" class="js_menu" />
-      </nav>
-      <nav class="navbar_desktop">
-        <ul class="navbar_desktop_menu">
-          <li><a class="nav_link" href="#home">Welcome</a></li>
-          <li><a class="nav_link" href="#works">My Recent Works</a></li>
-          <li><a class="nav_link" href="#about">About</a></li>
-          <li><a class="nav_link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- END TOOLBAR -->
-
-    <!-- HOME -->
-    <section class="home" id="home">
-      <div class="home_div">
-        <h1 class="home_title">
-          <span>Hey there. I’m Jihane</span>
-          <span class="home_title_green">I’m a software developer </span>
-        </h1>
-        <p class="home_text">
-          I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
-        </p>
-        <ul class="home_socialbar">
-          <li>
-            <a href="https://www.linkedin.com/in/jaflih/" target="_blank" rel="noopener">
-              <img src="images/icons/linkedin.png" alt="linkedin link" />
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/jaflih" target="_blank" rel="noopener">
-              <img src="images/icons/github.png" alt="github link" />
-            </a>
-          </li>
-          <li>
-            <a href="https://angel.co/u/jaflih" target="_blank" rel="noopener">
-              <img src="images/icons/angellist.png" alt="angellist link" />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/j_aflih" target="_blank" rel="noopener">
-              <img src="images/icons/twitter.png" alt="twitter link" />
-            </a>
-          </li>
-          <li>
-            <a href="https://medium.com/@jaflih" target="_blank" rel="noopener">
-              <img src="images/icons/medium.png" alt="medium link" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- END HOME -->
-
-    <!-- POPUP -->
-    <div class="popup-modal popup-hidden">
-      <div class="popup-data">
-        <div class="popup-close">
-          <img src="images/close_popup.png" class="close_popup" alt="close popup" />
-        </div>
-        <div class="popup-image">
-          <img class="popup-mobile-image" src="#" alt="image project on mobile" />
-          <img class="popup-desktop-image" src="#" alt="image project on desktop" />
-        </div>
-        <div class="dflex">
-          <div class="popup-bottom">
-            <h3>Project title</h3>
-            <ul class="popup-bottom-list"></ul>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt repudiandae nulla eius maiores. Molestiae soluta ipsam
-              perspiciatis corrupti, commodi enim aliquid vitae vero harum reprehenderit esse voluptates quod nam.
-            </p>
+        <div class="menu">
+          <div class="js_menu">
+            <img src="images/icons/cancel.png" alt="close top navigation menu" />
           </div>
-          <div class="popup-bottom-buttons">
-            <a href="#" class="live-button button">See Live <img src="images/icons/seeliveicon.png" alt="icon to see project" /></a>
-            <a href="#" class="source-button button">See Source <img src="images/icons/githubwhite.png" alt="github icon" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END POPUP -->
-
-    <!-- RECENT WORKS -->
-    <section class="works" id="works">
-      <h2 class="common_title">My Recent Works</h2>
-      <hr class="separator" />
-      <div class="work_card_list" id="card_list"></div>
-    </section>
-    <!-- END RECENT WORKS -->
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="about_block">
-        <h2 class="common_title">About me</h2>
-        <hr class="separator" />
-
-        <p class="about_text">
-          I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
-        </p>
-        <a href="https://drive.google.com/file/d/1yfJ3C0tns6dYsgmueFcnPoP-b9Fhwz42/view?usp=sharing" class="button" target="_blank" rel="noopener"
-          >Get My Resume</a
-        >
-      </div>
-
-      <div class="skills_div">
-        <h2 class="common_title">Skills</h2>
-        <div class="about_card">
-          <ul class="about_card_list">
-            <li class="about_card_item">
-              <div class="langagues_item">
-                <img class="image" src="images/html.svg" alt="langagues section icon" />
-                <span>HTML5</span>
-              </div>
+          <ul class="navbar_mobile_menu">
+            <li>
+              <a class="js_menu nav_link_mobile" href="#home">Welcome</a>
             </li>
-            <li class="about_card_item">
-              <div class="langagues_item">
-                <img class="image" src="images/css.svg" alt="langagues section icon" />
-                <span>CSS3</span>
-              </div>
+            <li>
+              <a class="js_menu nav_link_mobile" href="#works">My Recent Works</a>
             </li>
-            <li class="about_card_item">
-              <div class="langagues_item">
-                <img class="image" src="images/sass.svg" alt="langagues section icon" />
-                <span>CSS3</span>
-              </div>
-            </li>
-            <li class="about_card_item">
-              <div class="langagues_item">
-                <img class="image" src="images/javascript.svg" alt="langagues section icon" />
-                <span>Javascript</span>
-              </div>
-            </li>
-            <li class="about_card_item">
-              <div class="langagues_item">
-                <img class="image" src="images/react.svg" alt="langagues section icon" />
-                <span>React</span>
-              </div>
-            </li>
-            <li class="about_card_item">
-              <div class="langagues_item">
-                <img class="image" src="images/ruby.svg" alt="langagues section icon" />
-                <span>Ruby</span>
-              </div>
-            </li>
-            <li class="about_card_item">
-              <div class="langagues_item">
-                <img class="image" src="images/ruby_on_rails.svg" alt="langagues section icon" />
-                <span>Ruby on Rails</span>
-              </div>
-            </li>
-            <li class="about_card_item">
-              <div class="langagues_item">
-                <img class="image" src="images/php.png" alt="langagues section icon" />
-                <span>PHP</span>
-              </div>
-            </li>
-            <li class="about_card_item">
-              <div class="langagues_item">
-                <img class="image" src="images/laravel.png" alt="langagues section icon" />
-                <span>Laravel</span>
-              </div>
-            </li>
-            <li class="about_card_item">
-              <div class="langagues_item">
-                <img class="image" src="images/wordpress.svg" alt="langagues section icon" />
-                <span>Wordpress</span>
-              </div>
+            <li><a class="js_menu nav_link_mobile" href="#about">About</a></li>
+            <li>
+              <a class="js_menu nav_link_mobile" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
-      </div>
-    </section>
-    <!-- END ABOUT -->
+      </nav>
+      <!-- END TOOLBAR -->
 
-    <!-- FOOTER -->
-    <footer class="contact" id="contact">
-      <h2 class="common_title">Contact me</h2>
-      <hr class="separator" />
-      <div class="contact_block_1">
-        <div class="contact_header">
-          <p class="contact_me_text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-        </div>
-        <form class="contact_form" action="https://formspree.io/f/moqraknq" method="POST">
-          <div class="form_input">
-            <label for="name">Full Name:</label>
-            <input type="text" name="name" id="name" class="contact_input" required placeholder="Full name" maxlength="30" />
-          </div>
-          <div class="form_input">
-            <label for="email">E-mail:</label>
-            <input type="email" name="_replyto" id="email" class="contact_input" required placeholder="Email address" />
-          </div>
-          <div class="form_input">
-            <label for="message">Message </label>
-            <textarea
-              id="message"
-              name="message"
-              class="contact_textarea"
-              cols="30"
-              rows="10"
-              required
-              placeholder="Enter text here"
-              maxlength="500"
-            ></textarea>
-          </div>
-          <small class="message_hidden">The content of the email field has to be in lower case</small>
-          <input type="submit" class="contact_button button_green" value="Get It Touch" />
-        </form>
-      </div>
+      <article>
+        <!-- HOME -->
+        <section class="home" id="home">
+          <div class="home_div">
+            <h1 class="home_title">
+              <span>Hey there. I’m Jihane</span>
+              <span class="home_title_green">I’m a software developer </span>
+            </h1>
+            <p class="home_text">
+              I can help you build a product , feature or website. <br />
+              Look through some of my work and experience! <br />
+              If you like what you see and have a project you need coded, don’t hestiate to contact me.
+            </p>
+            <ul class="home_socialbar">
+              <li>
+                <a href="https://www.linkedin.com/in/jaflih/" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
 
-      <ul class="home_socialbar">
-        <li>
-          <a href="https://www.linkedin.com/in/jaflih/" target="_blank" rel="noopener">
-            <img src="images/icons/linkedin.png" alt="linkedin link" />
-          </a>
-        </li>
+              <li>
+                <a href="https://github.com/jaflih" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://angel.co/u/jaflih" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-angellist"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/j_aflih" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://medium.com/@jaflih" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-m"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- END HOME -->
 
-        <li>
-          <a href="https://github.com/jaflih" target="_blank" rel="noopener">
-            <img src="images/icons/github.png" alt="github link" />
-          </a>
-        </li>
-        <li>
-          <a href="https://angel.co/u/jaflih" target="_blank" rel="noopener">
-            <img src="images/icons/angellist.png" alt="angellist link" />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/j_aflih" target="_blank" rel="noopener">
-            <img src="images/icons/twitter.png" alt="twitter link" />
-          </a>
-        </li>
-        <li>
-          <a href="https://medium.com/@jaflih" target="_blank" rel="noopener">
-            <img src="images/icons/medium.png" alt="medium link" />
-          </a>
-        </li>
-      </ul>
-      <p class="contact_email">Jihane AFLIH</p>
-      <div class="contact_ind_block">
-        <div class="contact_ind"></div>
-      </div>
-    </footer>
-    <!-- END FOOTER -->
+        <!-- RECENT WORKS -->
+        <section class="works" id="works">
+          <h2 class="common_title h236">My Recent Works</h2>
+          <div class="work_card_list" id="card_list"></div>
+        </section>
+        <!-- END RECENT WORKS -->
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+          <div class="about_block">
+            <h2 class="common_title h136">About me</h2>
+
+            <p class="about_text">
+              I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a
+              project you need coded, don’t hestiate to contact me.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1yfJ3C0tns6dYsgmueFcnPoP-b9Fhwz42/view?usp=sharing"
+              class="button2"
+              target="_blank"
+              rel="noopener"
+              ><span>Get My Resume </span></a
+            >
+          </div>
+
+          <div class="skills_div">
+            <h2 class="common_title h48">Skills</h2>
+            <div class="about_card">
+              <ul class="about_card_list">
+                <li class="about_card_item">
+                  <div class="langagues_item">
+                    <img class="image" src="images/html.svg" alt="langagues section icon" />
+                    <span>HTML5</span>
+                  </div>
+                </li>
+                <li class="about_card_item">
+                  <div class="langagues_item">
+                    <img class="image" src="images/css.svg" alt="langagues section icon" />
+                    <span>CSS3</span>
+                  </div>
+                </li>
+                <li class="about_card_item">
+                  <div class="langagues_item">
+                    <img class="image" src="images/sass.svg" alt="langagues section icon" />
+                    <span>CSS3</span>
+                  </div>
+                </li>
+                <li class="about_card_item">
+                  <div class="langagues_item">
+                    <img class="image" src="images/javascript.svg" alt="langagues section icon" />
+                    <span>Javascript</span>
+                  </div>
+                </li>
+                <li class="about_card_item">
+                  <div class="langagues_item">
+                    <img class="image" src="images/react.svg" alt="langagues section icon" />
+                    <span>React</span>
+                  </div>
+                </li>
+                <li class="about_card_item">
+                  <div class="langagues_item">
+                    <img class="image" src="images/ruby.svg" alt="langagues section icon" />
+                    <span>Ruby</span>
+                  </div>
+                </li>
+                <li class="about_card_item">
+                  <div class="langagues_item">
+                    <img class="image" src="images/ruby_on_rails.svg" alt="langagues section icon" />
+                    <span>Ruby on Rails</span>
+                  </div>
+                </li>
+                <li class="about_card_item">
+                  <div class="langagues_item">
+                    <img class="image" src="images/php.png" alt="langagues section icon" />
+                    <span>PHP</span>
+                  </div>
+                </li>
+                <li class="about_card_item">
+                  <div class="langagues_item">
+                    <img class="image" src="images/laravel.png" alt="langagues section icon" />
+                    <span>Laravel</span>
+                  </div>
+                </li>
+                <li class="about_card_item">
+                  <div class="langagues_item">
+                    <img class="image" src="images/wordpress.svg" alt="langagues section icon" />
+                    <span>Wordpress</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- END ABOUT -->
+
+        <!-- FOOTER -->
+        <footer class="contact" id="contact">
+          <h2 class="common_title h236">Contact me</h2>
+          <div class="contact_block_1">
+            <div class="contact_header">
+              <p class="contact_me_text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+            </div>
+            <form class="contact_form" action="https://formspree.io/f/moqraknq" method="POST">
+              <div class="form_input">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name" class="contact_input" required placeholder="Full name" maxlength="30" />
+              </div>
+              <div class="form_input">
+                <label for="email">E-mail:</label>
+                <input type="email" name="_replyto" id="email" class="contact_input" required placeholder="Email address" />
+              </div>
+              <div class="form_input">
+                <label for="message">Message </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="contact_textarea"
+                  cols="30"
+                  rows="10"
+                  required
+                  placeholder="Enter text here"
+                  maxlength="500"
+                ></textarea>
+              </div>
+              <small class="message_hidden">The content of the email field has to be in lower case</small>
+              <input type="submit" class="contact_button button_green" value="Get It Touch" />
+            </form>
+          </div>
+
+          <ul class="home_socialbar">
+            <li>
+              <a href="https://www.linkedin.com/in/jaflih/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/jaflih" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://angel.co/u/jaflih" target="_blank" rel="noopener">
+                <i class="fa-brands fa-angellist"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/j_aflih" target="_blank" rel="noopener">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@jaflih" target="_blank" rel="noopener">
+                <i class="fa-solid fa-m"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="contact_email">Jihane AFLIH</p>
+          <div class="contact_ind_block">
+            <div class="contact_ind"></div>
+          </div>
+        </footer>
+        <!-- END FOOTER -->
+      </article>
+    </main>
     <script type="module" src="portfolio.js"></script>
     <script src="storage.js"></script>
   </body>

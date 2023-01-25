@@ -22,9 +22,11 @@ for (let i = 0; i < projects.length; i += 1) {
   const card = createElement(document.getElementById('card_list'), 'div', 'work_card');
   const cardDiv = createElement(card, 'div', 'img_work_card');
   const cardImg = createElement(cardDiv, 'img', 'image_work_card');
-  cardImg.src = `projects/th_${projects[i].image}`;
+  cardImg.src = `projects/${projects[i].image}`;
 
-  const cardData = createElement(card, 'div', 'data_work_card');
+  const cardDataD = createElement(card, 'div', 'data_work_card_d');
+
+  const cardData = createElement(cardDataD, 'div', 'data_work_card');
   createElement(cardData, 'h3', 'data_work_card', projects[i].name);
   const cardDataUl = createElement(cardData, 'ul', 'langagues');
 
@@ -56,12 +58,11 @@ for (let i = 0; i < projects.length; i += 1) {
 }
 
 // close the project popup
-function closeProjectPopup() {
+/* function closeProjectPopup() {
   document.querySelector('.popup-modal').classList.add('popup-hidden');
 }
-
-document.querySelector('.close_popup').addEventListener('click', closeProjectPopup);
-
+ document.querySelector('.close_popup').addEventListener('click', closeProjectPopup);
+*/
 /* VALIDATE THE FORM */
 document.querySelector('form').addEventListener('submit', (event) => {
   if (event.target.email.value.match(/[A-Z]/g)) {
