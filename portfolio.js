@@ -1,11 +1,9 @@
 import projects from './projects.js';
 
 /* MOBILE MENU */
-document.querySelectorAll('.js_menu').forEach((element) =>
-  element.addEventListener('click', () => {
-    document.querySelector('.navbar_mobile').classList.toggle('navbar_hidden');
-  })
-);
+document.querySelectorAll('.js_menu').forEach((element) => element.addEventListener('click', () => {
+  document.querySelector('.navbar_mobile').classList.toggle('navbar_hidden');
+}));
 
 /* WINDOWS PROJECT POPUP */
 /* GENERATE PROJECTS ON WORK SECTION */

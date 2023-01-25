@@ -101,22 +101,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding: 35px 24px 0 24px;
 }
 
 .home_title {
   display: flex;
   flex-direction: column;
-  text-align: center;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  padding: 35px 24px 0 24px;
 }
 
 .home_title_green {
-  color: #e96269;
+  color: #2ec4b6;
 }
 
 .home_text {
@@ -124,8 +122,6 @@ main {
   font-size: 20px;
   line-height: 28px;
   margin: 58px 0;
-  padding: 0 24px 0 24px;
-  text-align: center;
   color: #172b4d;
 }
 
@@ -140,7 +136,7 @@ main {
 }
 
 .home_socialbar img {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 40px 20px 0;
 }
 
 /*** -----------------  WORKS ----------------- ***/
@@ -151,7 +147,8 @@ main {
   align-items: center;
 }
 
-#works {
+#works,
+#about {
   padding: 35px 24px 0 24px;
 }
 
@@ -259,7 +256,7 @@ article {
   font-size: 36px;
   line-height: 52px;
   color: #2ec4b6;
-  margin: 70px 0 20px 0;
+  margin: 20px 0 20px 0;
   transition: 100ms;
   position: relative;
 }
@@ -272,9 +269,132 @@ article {
   height: 13px;
   left: 5px;
   bottom: 4px;
-  width: 236px;
   z-index: -1;
   border-radius: 3px;
+}
+
+.h236::after {
+  width: 236px;
+}
+
+.h136::after {
+  width: 136px;
+}
+
+.h48::after {
+  width: 48px;
+}
+
+/*** -----------------  ABOUT ----------------- ***/
+
+.about_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 10px;
+  color: #42526e;
+}
+
+.about_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border: 1px solid #2ec4b642;
+}
+
+.about_list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_card h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin-bottom: 24px;
+}
+
+.about_card_item {
+  background-color: white;
+  padding: 8px 12px 8px 12px;
+  margin: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.about_items {
+  margin: 20px 20px 20px 20px;
+  background-color: #ebf0ee;
+  border-radius: 8px;
+}
+
+.about_card_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.about_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.image {
+  animation-name: bigger;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.skills_div {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills_div h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.langagues_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.langagues_item img {
+  width: 40px;
+  height: 40px;
+}
+
+.button2 {
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.button2 span {
+  border: 1px solid #2ec4b6;
+  padding: 20px;
 }
 
 /*** -----------------  DESKTOP VERSION ----------------- ***/
