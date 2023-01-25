@@ -1,9 +1,11 @@
 import projects from './projects.js';
 
 /* MOBILE MENU */
-document.querySelectorAll('.js_menu').forEach((element) => element.addEventListener('click', () => {
-  document.querySelector('.navbar_mobile').classList.toggle('navbar_hidden');
-}));
+document.querySelectorAll('.js_menu').forEach((element) =>
+  element.addEventListener('click', () => {
+    document.querySelector('.navbar_mobile').classList.toggle('navbar_hidden');
+  })
+);
 
 /* WINDOWS PROJECT POPUP */
 /* GENERATE PROJECTS ON WORK SECTION */
@@ -22,9 +24,11 @@ for (let i = 0; i < projects.length; i += 1) {
   const card = createElement(document.getElementById('card_list'), 'div', 'work_card');
   const cardDiv = createElement(card, 'div', 'img_work_card');
   const cardImg = createElement(cardDiv, 'img', 'image_work_card');
-  cardImg.src = `projects/th_${projects[i].image}`;
+  cardImg.src = `projects/${projects[i].image}`;
 
-  const cardData = createElement(card, 'div', 'data_work_card');
+  const cardDataD = createElement(card, 'div', 'data_work_card_d');
+
+  const cardData = createElement(cardDataD, 'div', 'data_work_card');
   createElement(cardData, 'h3', 'data_work_card', projects[i].name);
   const cardDataUl = createElement(cardData, 'ul', 'langagues');
 
