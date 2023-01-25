@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="portfolio.css" />
-
+    <script src="https://kit.fontawesome.com/96d5778ce2.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8RP2GM07B"></script>
     <script>
@@ -27,7 +27,7 @@
       <!-- TOOLBAR -->
       <header class="toolbar">
         <nav class="navbar">
-          <img src="images/icons/menu.png" alt="open top navigation menu" class="js_menu" />
+          <i class="fa-solid fa-bars js_menu"></i>
         </nav>
       </header>
       <nav class="navbar_mobile navbar_hidden">
@@ -60,34 +60,35 @@
               <span class="home_title_green">I’m a software developer </span>
             </h1>
             <p class="home_text">
-              I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a
-              project you need coded, don’t hestiate to contact me.
+              I can help you build a product , feature or website. <br />
+              Look through some of my work and experience! <br />
+              If you like what you see and have a project you need coded, don’t hestiate to contact me.
             </p>
             <ul class="home_socialbar">
               <li>
                 <a href="https://www.linkedin.com/in/jaflih/" target="_blank" rel="noopener">
-                  <img src="images/icons/linkedin.png" alt="linkedin link" />
+                  <i class="fa-brands fa-linkedin-in"></i>
                 </a>
               </li>
 
               <li>
                 <a href="https://github.com/jaflih" target="_blank" rel="noopener">
-                  <img src="images/icons/github.png" alt="github link" />
+                  <i class="fa-brands fa-github"></i>
                 </a>
               </li>
               <li>
                 <a href="https://angel.co/u/jaflih" target="_blank" rel="noopener">
-                  <img src="images/icons/angellist.png" alt="angellist link" />
+                  <i class="fa-brands fa-angellist"></i>
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/j_aflih" target="_blank" rel="noopener">
-                  <img src="images/icons/twitter.png" alt="twitter link" />
+                  <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
               <li>
                 <a href="https://medium.com/@jaflih" target="_blank" rel="noopener">
-                  <img src="images/icons/medium.png" alt="medium link" />
+                  <i class="fa-solid fa-m"></i>
                 </a>
               </li>
             </ul>
@@ -189,6 +190,75 @@
           </div>
         </section>
         <!-- END ABOUT -->
+
+        <!-- FOOTER -->
+        <footer class="contact" id="contact">
+          <h2 class="common_title h236">Contact me</h2>
+          <div class="contact_block_1">
+            <div class="contact_header">
+              <p class="contact_me_text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+            </div>
+            <form class="contact_form" action="https://formspree.io/f/moqraknq" method="POST">
+              <div class="form_input">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name" class="contact_input" required placeholder="Full name" maxlength="30" />
+              </div>
+              <div class="form_input">
+                <label for="email">E-mail:</label>
+                <input type="email" name="_replyto" id="email" class="contact_input" required placeholder="Email address" />
+              </div>
+              <div class="form_input">
+                <label for="message">Message </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="contact_textarea"
+                  cols="30"
+                  rows="10"
+                  required
+                  placeholder="Enter text here"
+                  maxlength="500"
+                ></textarea>
+              </div>
+              <small class="message_hidden">The content of the email field has to be in lower case</small>
+              <input type="submit" class="contact_button button_green" value="Get It Touch" />
+            </form>
+          </div>
+
+          <ul class="home_socialbar">
+            <li>
+              <a href="https://www.linkedin.com/in/jaflih/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/jaflih" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://angel.co/u/jaflih" target="_blank" rel="noopener">
+                <i class="fa-brands fa-angellist"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/j_aflih" target="_blank" rel="noopener">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@jaflih" target="_blank" rel="noopener">
+                <i class="fa-solid fa-m"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="contact_email">Jihane AFLIH</p>
+          <div class="contact_ind_block">
+            <div class="contact_ind"></div>
+          </div>
+        </footer>
+        <!-- END FOOTER -->
       </article>
     </main>
     <script type="module" src="portfolio.js"></script>

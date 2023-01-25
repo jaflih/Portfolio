@@ -54,6 +54,7 @@ main {
 .js_menu {
   align-self: flex-end;
   cursor: pointer;
+  font-size: 25px;
 }
 
 .navbar_mobile li {
@@ -96,7 +97,6 @@ main {
 }
 
 .home_div {
-  background-color: white;
   opacity: 0.8;
   display: flex;
   flex-direction: column;
@@ -135,8 +135,22 @@ main {
   list-style: none;
 }
 
-.home_socialbar img {
-  padding: 20px 40px 20px 0;
+.home_socialbar i {
+  font-size: 30px;
+  margin-right: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  transition: all 0.5s ease;
+}
+
+.home_socialbar i:hover {
+  background-color: white;
+  color: #2ec4b6;
+  border: 1px solid #2ec4b6;
+  transition: all 0.5s ease;
 }
 
 /*** -----------------  WORKS ----------------- ***/
@@ -249,6 +263,9 @@ main {
 article {
   display: flex;
   flex-direction: column;
+  background-image: url('images/bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .common_title {
@@ -333,6 +350,12 @@ article {
   height: 100px;
   display: flex;
   justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.about_card_item:hover {
+  box-shadow: 2px 2px 5px #00000085;
+  transition: all 0.5s ease;
 }
 
 .about_items {
@@ -395,6 +418,115 @@ article {
 .button2 span {
   border: 1px solid #2ec4b6;
   padding: 20px;
+}
+
+/*** -----------------  FOOTER ----------------- ***/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 24px 0 24px;
+}
+
+.contact_me_text {
+  color: #172b4d;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.contact_input,
+.contact_textarea {
+  padding: 15px;
+  margin: 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  width: 85%;
+}
+
+.contact_input {
+  border: #d0d9d4 1px solid;
+}
+
+.contact_textarea {
+  border: #d0d9d4 1px solid;
+}
+
+.contact_textarea:hover,
+.contact_input:hover {
+  border: 1px solid #cbf3f0;
+}
+
+.contact_button {
+  padding: 12px;
+  margin: 12px 12px 40px 12px;
+  background-color: #2ec4b6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  align-self: center;
+  font-size: 17px;
+}
+
+.contact .home_socialbar {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_email {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: #42526e;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact_icon img {
+  padding: 0 2px 20px 20px;
+}
+
+.contact_ind_block {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_ind {
+  margin: 250px 50px 5px 50px;
+  width: 150px;
+  height: 6px;
+}
+
+footer {
+  flex-direction: column;
+}
+
+.message_hidden {
+  display: none;
+}
+
+small {
+  color: red;
+}
+
+label {
+  display: none;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  outline: none;
 }
 
 /*** -----------------  DESKTOP VERSION ----------------- ***/

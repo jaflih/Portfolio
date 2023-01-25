@@ -58,12 +58,11 @@ for (let i = 0; i < projects.length; i += 1) {
 }
 
 // close the project popup
-function closeProjectPopup() {
+/* function closeProjectPopup() {
   document.querySelector('.popup-modal').classList.add('popup-hidden');
 }
-
-document.querySelector('.close_popup').addEventListener('click', closeProjectPopup);
-
+ document.querySelector('.close_popup').addEventListener('click', closeProjectPopup);
+*/
 /* VALIDATE THE FORM */
 document.querySelector('form').addEventListener('submit', (event) => {
   if (event.target.email.value.match(/[A-Z]/g)) {
